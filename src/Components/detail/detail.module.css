@@ -1,0 +1,210 @@
+h1{
+    font-size: 1.375em;
+    color: var(--black);
+    line-height: 1.75em;
+    font-weight: 600;
+    margin: 1.25em 0;
+}
+.breadcrumbs{
+    margin-top: 1.25em;
+    font-size: 0.9375em;
+    color: #858585;
+}
+.breadcrumbs a{
+    color: #858585;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    text-decoration: underline;
+    color: var(--green);
+}
+.details{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.info{
+    width: 31.9642857%;
+}
+.btnBuy{
+    padding: .7em;
+    font-size: 1.25em;
+    background: var(--secundary-green);
+    color: var(--white);
+    font-weight: 800;
+    margin: 1.1875em 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.btnBuy:hover,
+.btnBuy:focus{
+    background: var(--green);
+}
+.note{
+    font-size: .875em;
+    padding: 1em;
+    background: #F08D0621;
+    border: 1px solid #F08D06;
+    color: #5D3C0F;
+    font-weight: 400;
+}
+.note strong{
+    font-weight: 600;
+}
+.note p{
+    margin-bottom: .5em;
+}
+.realPrice{
+    text-decoration: line-through;
+    line-height: 1.75em;
+    font-size: .875em;
+    font-weight: 400;
+    color: #545454;
+}
+.discountPrice{
+    font-size: 1.5625em;
+    line-height: 1.75em;
+    color: var(--secondary-red);
+}
+.color,
+.productSize{
+    color: #545454;
+    font-weight: 400;
+    font-size: .875em;
+    margin: 1.2em 0;
+}
+.color{
+    display: flex;
+    flex-flow: row wrap;
+}
+.color p{
+    width: 100%;
+    margin-bottom: .5em;
+}
+.color input:checked + label::before{
+    background: var(--dark-gray);
+    border-color: transparent;
+}
+.color input{ display: none; }
+.color span{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: .5em;
+}
+.color label{
+    cursor: pointer;
+}
+.color label::before{
+    content: '';
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: .5em;
+    border: 1px solid var(--dark-gray);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.images{
+    width: 65.196429%;
+    height: 25.375em;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+.view{
+    background: var(--white);
+    width: 84.1628959%;
+    border: 1px solid #E2E2E2;
+    padding: 1.5em;
+}
+.thumbnails{
+    width: 13.653092%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.thumbnails figure{
+    border: 1px solid #E2E2E2;
+    background: var(--white);
+    height: 5.875em;
+    padding: .5em;
+}
+.thumbnails img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.view img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.groupOption{
+    position: relative;
+    display: inline-block;
+    margin: .7em .5em 1em 0;
+}
+.groupOption input{
+    display: none;
+}
+.groupOption label{
+    border: 1px solid var(--dark-gray);
+    color: var(--dark-gray);
+    padding: .4em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.productOption:checked ~ label{
+    background: var(--dark-gray);
+    color: var(--white);
+}
+.warning div label{
+    border: 1px solid var(--red);
+    color: var(--red) !important;
+}
+.warning span label{
+    color: var(--red) !important;
+}
+.warning span label::before{
+    border: 1px solid var(--red);
+    color: var(--red) !important;
+}
+
+
+.warning p{
+    color: var(--red);
+}
+.messageWarning{
+    display: none;
+    /* margin-top: -.7em; */
+    font-size: .75em;
+}
+.messageWarning::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: .3em;
+    display: inline-block;
+    background: url(/src/images/danger-red.svg) no-repeat center center / 90%;
+}
+.warningShow{ 
+    display: block !important;
+}

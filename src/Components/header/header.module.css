@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    width: 25.3125em;
+    margin-right: 2em;
+    border-radius: 1.125em;
+    overflow: hidden;
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: .8em;
+    width: calc(100% - 3.125em);
+    font: normal normal normal .875em/1.375em 'Open Sans';
+}
+.search input::placeholder{
+    color: var(--placeholder);
+    font-size: .75em;
+}
+.search input::-moz-placeholder{
+    color: var(--placeholder);
+    font-size: .75em;
+}
+.search button{
+    background: none;
+    border: none;
+}
+.login svg,
+.cart svg{
+    margin-right: 7px;
+}
+.login,
+.cart a{ 
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+    font-size: .6875em; 
+    margin: 0 1em;
+}
+.login a,
+.cart a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+}
+.cart a{
+    border-left: 1px solid var(--black);
+    padding-left: 1.5em;
+
+}
+.login a:hover,
+.login a:focus,
+.cart a:hover,
+.cart a:focus{
+    text-decoration: underline;
+}
+.login span{
+    margin: 0 .5em;
+}
+.amount{
+    position: relative;
+}
+.number{
+    background: var(--green);
+    color: var(--white);
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7em;
+    position: absolute;
+    right: 0;
+    top: -.3em;
+}

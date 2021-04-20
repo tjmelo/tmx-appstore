@@ -1,0 +1,84 @@
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 30%;
+}
+.input p,
+.textarea p{
+    color: var(--dark-gray);
+    width: 100%;
+    margin: 2em 0 .5em;
+}
+.input input[type="text"],
+.input select,
+.textarea input,
+.input input[type="number"]{
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    padding: 1em;
+    width: 100%;
+    font-size: .875em;
+}
+.options input:checked + label::before{
+    background: var(--dark-gray);
+    border-color: transparent;
+}
+
+.options label{
+    cursor: pointer;
+    margin-right: .5em;
+    font-size: .875em;
+    color: var(--dark-gray);
+}
+.options label::before{
+    content: '';
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: .3em;
+    border: 1px solid var(--dark-gray);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.options input{
+    display: none;
+}
+
+.button{
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 1em 5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    float: right;
+    margin-top: 2em;
+}
+.button:hover,
+.button:focus{
+    filter:brightness(95%);
+}
+.textarea{
+    width: 100%;
+}
+.textarea .input{
+    width: 100%;
+}
+.textarea input { 
+    margin-top: 1em;
+    width: 100%;
+}
