@@ -1,44 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Informações úteis
 
-## Available Scripts
+Este protótipo foi construído usando a lib React, em conjunto com Redux e React Routrer para a persistência dos dados. Além disso, o sistema faz uso do mock API json-server para servir os dados para a aplicação.
 
-In the project directory, you can run:
-
+Na pasta raiz do projeto, execute:
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O comando acima inicializa as diretivas necessárias para a execução da aplicação, bem como a inicialização do servidor mock API json-server. Vide package.json.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+Para disponibilizar os arquivos para produção, execute:
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A aplicação criará uma pasta build com os arquivos compilados de forma adequada.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Sobre a aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A aplicação dispõe de um painel de login, onde o usuário, previamente registrado, consegue fazer a inserção de novos produtos o seu gerenciamento. Dessa forma, é possível vincula-lo a uma promoção, a uma categoria, gênero etc.
 
-### `npm run eject`
+- Existe a possibilidade de se cadastrar um novo usuário, caso seja o primeiro acesso à aplicação.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Nota importante
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Essa versão trata-se de um protótipo inicial da aplicação. Portanto, algumas peculiaridades minímas, dispensáveis ao uso do app, foram ignorados a princípio. Por exemplo:
+ - Existe uma validação rasa dos dados de entrada nos formulários de login e cadastro, sem qualquer mensagem de feedback. No entanto, a validação existe.
+ - No painel de CRUD, todas as funcionalidades previstas estão contidas, como: Criação de novos dados, leitura de registros, atualização dos dados já inseridos e a remoção de registros contidos. Porém, vale ressaltar que o design do painel encontra-se de uma forma rude.
