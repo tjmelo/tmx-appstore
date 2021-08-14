@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import { Siteware } from './Components/Siteware';
-import { SideMenu } from './Components/sideMenu/sideMenu';
+import { Siteware } from "./Components/Siteware";
+import { SideMenu } from "./Components/sideMenu/sideMenu";
 
-import { store } from './store/store';
-import { Provider } from 'react-redux';
+import { store } from "./store/store";
+import { Provider } from "react-redux";
 
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from "./serviceWorker";
 
-import './style.css';
+import "./style.scss";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,7 +21,7 @@ ReactDOM.render(
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 serviceWorker.unregister();

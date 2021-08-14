@@ -1,0 +1,49 @@
+.sidebar {
+  background: var(--red);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 3.4em;
+  .logo {
+    color: var(--white, #ffffff);
+    margin: 1em 0 3em;
+    svg {
+      width: 70%;
+      height: 100%;
+    }
+  }
+  a {
+    display: block;
+    padding: 0.7em;
+    .home {
+      padding: 0.9em;
+    }
+    .sock {
+      padding: 0.8em;
+    }
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1em;
+      padding: 0.5em;
+      color: var(--white, #ffffff);
+      opacity: 0.7;
+      transition: all 0.2s;
+      &:hover,
+      &:focus {
+        background: var(--white, #ffffff);
+        border-radius: 3px;
+        box-shadow: 0px 3px 6px var(--gray);
+        color: var(--red, #e31b23);
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
