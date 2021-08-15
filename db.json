@@ -3,8 +3,17 @@
     {
       "title": "Tênis Nike Court Lite 2 Masculino - Branco",
       "name": "Tênis ",
-      "color": ["verde", " amarelo", " rosa", " azul"],
-      "size": ["36", " 40", " 42"],
+      "color": [
+        "verde",
+        " amarelo",
+        " rosa",
+        " azul"
+      ],
+      "size": [
+        "36",
+        " 40",
+        " 42"
+      ],
       "image": "/shoes/shoe.jpg",
       "promo": "0",
       "promotion": "",
@@ -17,8 +26,17 @@
     {
       "title": "TÊNIS TENSAURUS (UNIS",
       "name": "Tênis ",
-      "color": ["Branco", " Amarelo", " Preto"],
-      "size": ["36", "40", "42", "44"],
+      "color": [
+        "Branco",
+        " Amarelo",
+        " Preto"
+      ],
+      "size": [
+        "36",
+        "40",
+        "42",
+        "44"
+      ],
       "image": "/shoes/shoe.jpg",
       "promo": "1",
       "promotion": "Na compra de 2 produtos, pague apenas 1",
@@ -31,8 +49,17 @@
     {
       "title": "Meia cano longo sport",
       "name": "Meia",
-      "color": ["Branco", " Cinza", " Preto"],
-      "size": ["36", "40", "42", "44"],
+      "color": [
+        "Branco",
+        " Cinza",
+        " Preto"
+      ],
+      "size": [
+        "36",
+        "40",
+        "42",
+        "44"
+      ],
       "image": "/socks/sock.jpg",
       "promo": "2",
       "promotion": "Na compra de 3 unidades pague apenas R$10,00 em cada uma. 100% DE DESCONTO NA COMPRA DO TERCEIRO",
@@ -45,8 +72,13 @@
     {
       "title": "Meia socket short tenessi sport action ",
       "name": "Meia",
-      "color": ["Branco"],
-      "size": ["40", "42"],
+      "color": [
+        "Branco"
+      ],
+      "size": [
+        "40",
+        "42"
+      ],
       "image": "/socks/sock.jpg",
       "promo": "0",
       "promotion": "",
@@ -87,6 +119,12 @@
       "email": "teste2@teste.com.br",
       "password": "458",
       "id": 5
+    },
+    {
+      "login": "tester",
+      "email": "tester@teste.com.br",
+      "password": "123",
+      "id": 6
     }
   ]
 }

@@ -14,22 +14,39 @@ export const SideMenu = () => {
   return (
     <nav className={style.sidebar}>
       <ul>
-        <li className={style.logo} title="TMX Store">
+        <li
+          className={style.logo}
+          title="TMX Store"
+          data-testid="logo"
+        >
           <FontAwesomeIcon icon={faGem} />
           <span>TMX Store</span>
         </li>
         <li>
-          <Link to="/" className={style.home} title="Home">
+          <Link
+            to="/"
+            className={style.home}
+            title="Home"
+            data-testid="home"
+          >
             <FontAwesomeIcon icon={faStore} />
           </Link>
         </li>
         <li>
-          <Link to="/shoes" title="Shoes">
+          <Link
+            to="/shoes"
+            title="Shoes"
+            data-testid="shoes"
+          >
             <FontAwesomeIcon icon={faShoePrints} />
           </Link>
         </li>
         <li>
-          <Link to="/socks" title="Socks">
+          <Link
+            to="/socks"
+            title="Socks"
+            data-testid="socks"
+          >
             <FontAwesomeIcon icon={faSocks} />
           </Link>
         </li>
