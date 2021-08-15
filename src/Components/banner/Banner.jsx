@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import banner from "./banner.module.css";
+import banner from "./banner.module.scss";
 import "flickity/dist/flickity.min.css";
 import Flickity from "flickity";
 
@@ -18,18 +18,8 @@ export const Banner = () => {
       <h1 className="title">Produtos</h1>
       <h2 className="subTitle">Promoções em destaque</h2>
       <section className={`slider ${banner.slide}`}>
-        <div>
-          <img
-            src={`${process.env.PUBLIC_URL}/banner1.jpg`}
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src={`${process.env.PUBLIC_URL}/banner2.jpg`}
-            alt=""
-          />
-        </div>
+        <div></div>
+        <div></div>
       </section>
     </section>
   );

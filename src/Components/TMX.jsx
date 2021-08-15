@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import { SitewareStore } from "./SitewareStore";
+import { TMXStore } from "./TMXStore";
 import { Header } from "./header/Header";
 import { Banner } from "./banner/Banner";
 import { Shoes } from "./shoes/Shoes";
@@ -16,9 +16,9 @@ import { Painel } from "./crud/painel/painel";
 import { Detail } from "./detail/Detail";
 import { ListProducts } from "./crud/list/listProducts";
 
-export const Siteware = () => {
+export const TMX = () => {
   return (
-    <SitewareStore>
+    <TMXStore>
       <Header />
       <Switch>
         <Route path="/shoes" component={Shoes} />
@@ -39,6 +39,6 @@ export const Siteware = () => {
           <Promotions />
         </Route>
       </Switch>
-    </SitewareStore>
+    </TMXStore>
   );
 };

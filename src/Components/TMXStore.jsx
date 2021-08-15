@@ -1,5 +1,5 @@
 import React from "react";
 
-export const SitewareStore = ({ children }) => {
+export const TMXStore = ({ children }) => {
   return <section className="grid">{children}</section>;
 };
