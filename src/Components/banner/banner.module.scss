@@ -14,3 +14,17 @@
     object-fit: cover;
   }
 }
+
+.title {
+  width: auto;
+  display: inline;
+  background: linear-gradient(to right, #056cdb, #00b3db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.area {
+  margin-top: -2.3rem;
+}

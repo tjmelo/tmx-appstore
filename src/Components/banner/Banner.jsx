@@ -16,7 +16,7 @@ export const Banner = () => {
 
   return (
     <section className={banner.area}>
-      <h1 className="title">Produtos</h1>
+      <h1 className={banner.title}>Produtos</h1>
       <h2 className="subTitle">Promoções em destaque</h2>
       <section
         data-testid="banner"
