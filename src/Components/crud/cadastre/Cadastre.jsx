@@ -1,6 +1,6 @@
 import React from "react";
 import cadastre from "../crud.module.css";
-import { urlUser } from "../../api";
+import { urlUser } from "../../../service/api";
 import { useHistory } from "react-router";
 
 export const Cadastre = () => {

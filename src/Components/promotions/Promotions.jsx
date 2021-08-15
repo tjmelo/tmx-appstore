@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { urlProducts } from "../api";
+import { getProducts } from "../../service/api";
 import { Cards } from "../cards/Cards";
 
 export const Promotions = () => {
   const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch(urlProducts, { method: `GET` })
-      .then((data) => data.json())
-      .then((res) => setProducts(res));
-  }, []);
+  useEffect(async () => {
+    const prod = await getProducts();
+    setProducts(prod.data);
+  }, [products.data]);
 
   return (
-    <section className="containerPromotions">
+    <section
+      data-testid="cards"
+      className="containerPromotions"
+    >
       {products.map((el, idx) => (
         <Cards
           key={idx}

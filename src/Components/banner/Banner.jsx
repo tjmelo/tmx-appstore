@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import banner from "./banner.module.scss";
 import "flickity/dist/flickity.min.css";
 import Flickity from "flickity";
 
 export const Banner = () => {
+  const elem = useRef(null);
   useEffect(() => {
-    const elem = document.querySelector(".slider");
-    new Flickity(elem, {
+    elem.current = document.querySelector(".slider");
+    new Flickity(elem.current, {
       cellAlign: "left",
       autoPlay: 7500,
       pauseAutoPlayOnHover: false,
@@ -17,7 +18,11 @@ export const Banner = () => {
     <section className={banner.area}>
       <h1 className="title">Produtos</h1>
       <h2 className="subTitle">Promoções em destaque</h2>
-      <section className={`slider ${banner.slide}`}>
+      <section
+        data-testid="banner"
+        ref={elem}
+        className={`slider ${banner.slide}`}
+      >
         <div></div>
         <div></div>
       </section>

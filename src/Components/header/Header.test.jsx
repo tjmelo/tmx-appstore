@@ -5,7 +5,7 @@ import { store } from "../../store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
-describe("Testing header", () => {
+describe("Should testing header", () => {
   it("Testing render elements header", () => {
     const { getByTestId } = render(
       <Provider store={store}>

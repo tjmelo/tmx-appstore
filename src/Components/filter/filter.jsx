@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Cards } from "../cards/Cards";
-import { urlProducts } from "../api";
+import { urlProducts } from "../../service/api";
 import { useParams } from "react-router-dom";
 
 export const Filter = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { urlProducts } from "../../api";
+import { urlProducts } from "../../../service/api";
 import list from "../crud.module.css";
 
 export const ListProducts = () => {

@@ -1,5 +1,5 @@
 import painel from "./painel.module.css";
-import { urlProducts } from "../../api";
+import { urlProducts } from "../../../service/api";
 import { useParams, useHistory } from "react-router";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";

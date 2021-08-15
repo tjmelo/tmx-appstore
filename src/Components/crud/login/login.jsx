@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import login from "../crud.module.css";
 
-import { urlUser } from "../../api";
+import { urlUser } from "../../../service/api";
 import { useHistory } from "react-router";
 
 export const Login = () => {

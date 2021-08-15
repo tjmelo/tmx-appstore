@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { urlSocks } from "../api";
+import { urlSocks } from "../../service/api";
 import { Cards } from "../cards/Cards";
 
 export const Socks = () => {

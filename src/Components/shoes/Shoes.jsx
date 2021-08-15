@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { urlShoes } from "../api";
+import { urlShoes } from "../../service/api";
 import { Cards } from "../cards/Cards";
 
 export const Shoes = () => {

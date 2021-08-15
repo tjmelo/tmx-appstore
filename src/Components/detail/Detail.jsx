@@ -5,7 +5,7 @@ import detail from "./detail.module.css";
 
 import { productItems } from "../../features/product/productSlice";
 
-import { urlProducts } from "../api";
+import { urlProducts } from "../../service/api";
 
 export const Detail = () => {
   let link = useHistory();
