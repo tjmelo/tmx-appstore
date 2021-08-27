@@ -1,9 +1,15 @@
 import axios from "axios";
 
+const products = axios.create({
+  baseURL: "http://localhost:3001/products",
+  timeout: 1000,
+});
+
 export const urlProducts = `http://localhost:3001/products`;
 export const urlUser = `http://localhost:3001/user`;
 
-export const urlShoes = `http://localhost:3001/products?type=Tênis`;
-export const urlSocks = `http://localhost:3001/products?type=Meia`;
+const getProducts = products.get();
+const getShoes = products.get(`?type=Tênis`);
+const getSocks = products.get(`?type=Meia`);
 
-export const getProducts = () => axios.get(urlProducts);
+export { getProducts, getShoes, getSocks };

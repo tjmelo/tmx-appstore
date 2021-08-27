@@ -5,7 +5,7 @@ import { Cards } from "../cards/Cards";
 export const Promotions = () => {
   const [products, setProducts] = useState([]);
   useEffect(async () => {
-    const prod = await getProducts();
+    const prod = await getProducts;
     setProducts(prod.data);
   }, [products.data]);
 
