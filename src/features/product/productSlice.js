@@ -1,35 +1,35 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const productSlice = createSlice({
-  name: 'product',
+  name: "product",
   initialState: {
-    items: JSON.parse(sessionStorage.getItem('CART')) || [],
+    items: JSON.parse(sessionStorage.getItem("CART")) || [],
   },
   reducers: {
-    
     productReference: (state, action) => {
       state.card = action.payload;
     },
     productItems: (state, action) => {
       state.items.push(action.payload);
     },
-    removeItems: (state, action) =>  {
-      state.items = state.items.filter((el) => el.optionsProduct.ref !== action.payload)
+    removeItems: (state, action) => {
+      state.items = state.items.filter(
+        (el) => el.optionsProduct.ref !== action.payload
+      );
     },
-    updateItems: (state,action) => {
-      state.items = action.payload
+    updateItems: (state, action) => {
+      state.items = action.payload;
     },
     cleanItems: (state) => {
-      state.items = []
+      state.items = [];
     },
-
   },
 });
 
 export const {
-  productReference, 
+  productReference,
   productItems,
-  updateItems, 
+  updateItems,
   removeItems,
   cleanItems,
 } = productSlice.actions;

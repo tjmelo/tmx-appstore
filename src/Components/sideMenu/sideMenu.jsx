@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./sideMenu.module.scss";
 import { faGem } from "@fortawesome/free-regular-svg-icons";
-import {
-  faStore,
-  faSocks,
-  faShoePrints,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStore } from "@fortawesome/free-solid-svg-icons/faStore";
+import { faSocks } from "@fortawesome/free-solid-svg-icons/faSocks";
+import { faShoePrints } from "@fortawesome/free-solid-svg-icons/faShoePrints";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Link } from "react-router-dom";
