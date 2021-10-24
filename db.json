@@ -1,89 +1,57 @@
 {
   "products": [
     {
-      "title": "Tênis Nike Court Lite 2 Masculino - Branco",
-      "name": "Tênis ",
-      "color": [
-        "verde",
-        " amarelo",
-        " rosa",
-        " azul"
-      ],
-      "size": [
-        "36",
-        " 40",
-        " 42"
-      ],
+      "title": "Shoes Nike Court Lite 2 Masc - White",
+      "name": "Shoes ",
+      "color": ["Green", " Yellow", " Pink", " Blue"],
+      "size": ["36", " 40", " 42"],
       "image": "/shoes/shoe.jpg",
       "promo": "0",
       "promotion": "",
-      "type": "Tênis",
-      "category": "Feminino",
+      "type": "Shoes",
+      "category": "Female",
       "price": 680,
       "discount": 500.89,
       "id": 1
     },
     {
-      "title": "TÊNIS TENSAURUS (UNIS",
-      "name": "Tênis ",
-      "color": [
-        "Branco",
-        " Amarelo",
-        " Preto"
-      ],
-      "size": [
-        "36",
-        "40",
-        "42",
-        "44"
-      ],
+      "title": "Shoes TENSAURUS (Unissex)",
+      "name": "Shoes ",
+      "color": ["White", " Yellow", " Black"],
+      "size": ["36", "40", "42", "44"],
       "image": "/shoes/shoe.jpg",
       "promo": "1",
-      "promotion": "Na compra de 2 produtos, pague apenas 1",
-      "type": "Tênis",
+      "promotion": "For every two products, pay only one",
+      "type": "Shoes",
       "category": "Unissex",
       "price": 550,
       "discount": 450,
       "id": 2
     },
     {
-      "title": "Meia cano longo sport",
-      "name": "Meia",
-      "color": [
-        "Branco",
-        " Cinza",
-        " Preto"
-      ],
-      "size": [
-        "36",
-        "40",
-        "42",
-        "44"
-      ],
+      "title": "Sock longtail sport",
+      "name": "Sock",
+      "color": ["White", " Cinza", " Black"],
+      "size": ["36", "40", "42", "44"],
       "image": "/socks/sock.jpg",
       "promo": "2",
-      "promotion": "Na compra de 3 unidades pague apenas R$10,00 em cada uma. 100% DE DESCONTO NA COMPRA DO TERCEIRO",
-      "type": "Meia",
-      "category": "Masculino",
+      "promotion": "When buying 3 units, pay only R$10.00 each. 100% DISCOUNT ON THE PURCHASE OF THE THIRD PARTY",
+      "type": "Sock",
+      "category": "Masc",
       "price": 5,
       "discount": 5,
       "id": 3
     },
     {
-      "title": "Meia socket short tenessi sport action ",
-      "name": "Meia",
-      "color": [
-        "Branco"
-      ],
-      "size": [
-        "40",
-        "42"
-      ],
+      "title": "Sock socket short tenessi sport action ",
+      "name": "Sock",
+      "color": ["White"],
+      "size": ["40", "42"],
       "image": "/socks/sock.jpg",
       "promo": "0",
       "promotion": "",
-      "type": "Meia",
-      "category": "Feminino",
+      "type": "Sock",
+      "category": "Female",
       "price": 30,
       "discount": 30,
       "id": 4

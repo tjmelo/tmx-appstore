@@ -1,0 +1,17 @@
+.breadcrumbs {
+  margin-top: 1.25em;
+  font-size: 0.9375em;
+  color: #858585;
+  a {
+    color: #858585;
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: var(--green);
+    }
+  }
+}

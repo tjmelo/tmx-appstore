@@ -1,0 +1,36 @@
+.unitary {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2.8em;
+}
+.vreal {
+  text-decoration: line-through;
+  color: var(--secondary-gray);
+  font-size: 0.75em;
+  line-height: 1.75em;
+}
+.vdiscount {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--dark-gray);
+}
+.unitary {
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    background: var(--white);
+    border: 1px solid #c8c8c8;
+  }
+}
+.unitary {
+  input {
+    color: var(--dark-gray);
+    border: none;
+    width: 1.8em;
+    text-align: center;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+  }
+}

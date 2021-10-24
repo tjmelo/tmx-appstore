@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import { getProducts } from "../../service/api";
-import { Cards } from "../cards/Cards";
+
+const Cards = lazy(() => import("../cards"));
 
 export const Promotions = () => {
   const [products, setProducts] = useState([]);

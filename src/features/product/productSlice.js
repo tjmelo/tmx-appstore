@@ -14,7 +14,7 @@ export const productSlice = createSlice({
     },
     removeItems: (state, action) => {
       state.items = state.items.filter(
-        (el) => el.optionsProduct.ref !== action.payload
+        (el) => el.index !== action.payload
       );
     },
     updateItems: (state, action) => {

@@ -1,0 +1,12 @@
+.realPrice {
+  text-decoration: line-through;
+  line-height: 1.75em;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #545454;
+}
+.discountPrice {
+  font-size: 1.5625em;
+  line-height: 1.75em;
+  color: var(--secondary-red);
+}
