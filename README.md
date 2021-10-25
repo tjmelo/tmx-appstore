@@ -1,19 +1,17 @@
 # :tropical_fish: TMX App Store
 
-[TMX AppStore](https://img.shields.io/github/release-date-pre/tjmelo/tmx-appstore?color=yellow)
+![TMX AppStore](https://img.shields.io/github/release-date-pre/tjmelo/tmx-appstore?color=yellow)
 
 That's a little template open source to app store. There's a several concepts across development of virtual store.
 
-Some useful skills:
-:paperclip: **Principal Lib:** React JS
-:paperclip: **Management Routes:** React Routes
+Some useful skills: <br>
+:paperclip: **Principal Lib:** React JS <br>
+:paperclip: **Management Routes:** React Routes <br>
 :paperclip: **Management States:** React Redux and Hook States
-
----
 
 ## :triangular_flag_on_post: Features
 
-[Version](https://img.shields.io/github/package-json/v/tjmelo/tmx-appstore/main)
+![Version](https://img.shields.io/github/package-json/v/tjmelo/tmx-appstore/main)
 
 The app store appear us an friendly interface with a banner and some available cards products for buying.
 
@@ -21,11 +19,9 @@ There's still a section for configurations details of products, before finish th
 
 There's an exclusive section for detailing of list a lot of products choosed. It's possible parameter like quantity, discount, remove cart and beyond. :checkered_flag:
 
----
-
 ## :gem: Install
 
-[Size](https://img.shields.io/github/repo-size/tjmelo/tmx-appstore)
+![Size](https://img.shields.io/github/repo-size/tjmelo/tmx-appstore)
 
 Clone repo
 
