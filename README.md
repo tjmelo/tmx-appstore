@@ -2,7 +2,9 @@
 
 ![TMX AppStore](https://img.shields.io/github/release-date-pre/tjmelo/tmx-appstore?color=yellow)
 
-That's a little template open source to app store. There's a several concepts across development of virtual store.
+That's a little template open source to a virtual store. There's a several concepts across of the development of this virtual store.
+
+    Some useful skills:
 
 Some useful skills: <br>
 :paperclip: **Principal Lib:** React JS <br>
@@ -17,7 +19,7 @@ The app store appear us an friendly interface with a banner and some available c
 
 There's still a section for configurations details of products, before finish the buy. Configurations like color, size are available. :smiley:
 
-There's an exclusive section for detailing of list a lot of products choosed. It's possible parameter like quantity, discount, remove cart and beyond. :checkered_flag:
+There's an exclusive section for detailing of list a lot of products choosed. It's possible parametering the quantity, discount, remove items cart and beyond. :checkered_flag:
 
 ## :gem: Install
 
@@ -69,4 +71,4 @@ or
 yarn test
 ```
 
-Have a code fun :fire:
+Have a code fun! :fire:
