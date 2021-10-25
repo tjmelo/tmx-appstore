@@ -1,6 +1,6 @@
 # :tropical_fish: TMX App Store
 
-![TMX AppStore](https://img.shields.io/github/release-date-pre/tjmelo/tmx-appstore?color=yellow)
+![TMX AppStore](https://img.shields.io/github/commit-status/tjmelo/tmx-appstore/main/f5aa831cef8f2afc2949a1f189c41239e1a5d126)
 
 That's a little template open source to a virtual store. There's a several concepts across of the development of this virtual store.
 
