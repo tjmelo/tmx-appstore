@@ -4,7 +4,7 @@
 
 That's a little template open source to a virtual store. There's a several concepts across of the development of this virtual store.
 
-    Some useful skills:
+Some useful skills:
 
 Some useful skills: <br>
 :paperclip: **Principal Lib:** React JS <br>
