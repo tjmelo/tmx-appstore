@@ -1,25 +1,74 @@
-## Informações úteis
+# :tropical_fish: TMX App Store
 
-Este protótipo foi construído usando a lib React, em conjunto com Redux e React Routrer para a persistência dos dados. Além disso, o sistema faz uso do mock API json-server para servir os dados para a aplicação.
+![TMX AppStore](https://img.shields.io/github/release-date-pre/tjmelo/tmx-appstore?color=yellow)
 
-Na pasta raiz do projeto, execute:
-### `npm start`
+That's a little template open source to a virtual store. There's a several concepts across of the development of this virtual store.
 
-O comando acima inicializa as diretivas necessárias para a execução da aplicação, bem como a inicialização do servidor mock API json-server. Vide package.json.
+    Some useful skills:
 
-Para disponibilizar os arquivos para produção, execute:
-### `npm run build`
+Some useful skills: <br>
+:paperclip: **Principal Lib:** React JS <br>
+:paperclip: **Management Routes:** React Routes <br>
+:paperclip: **Management States:** React Redux and Hook States
 
-A aplicação criará uma pasta build com os arquivos compilados de forma adequada.
+## :triangular_flag_on_post: Features
 
-## Sobre a aplicação
+![Version](https://img.shields.io/github/package-json/v/tjmelo/tmx-appstore/main)
 
-- A aplicação dispõe de um painel de login, onde o usuário, previamente registrado, consegue fazer a inserção de novos produtos o seu gerenciamento. Dessa forma, é possível vincula-lo a uma promoção, a uma categoria, gênero etc.
+The app store appear us an friendly interface with a banner and some available cards products for buying.
 
-- Existe a possibilidade de se cadastrar um novo usuário, caso seja o primeiro acesso à aplicação.
+There's still a section for configurations details of products, before finish the buy. Configurations like color, size are available. :smiley:
 
-# Nota importante
+There's an exclusive section for detailing of list a lot of products choosed. It's possible parametering the quantity, discount, remove items cart and beyond. :checkered_flag:
 
-Essa versão trata-se de um protótipo inicial da aplicação. Portanto, algumas peculiaridades minímas, dispensáveis ao uso do app, foram ignorados a princípio. Por exemplo:
- - Existe uma validação rasa dos dados de entrada nos formulários de login e cadastro, sem qualquer mensagem de feedback. No entanto, a validação existe.
- - No painel de CRUD, todas as funcionalidades previstas estão contidas, como: Criação de novos dados, leitura de registros, atualização dos dados já inseridos e a remoção de registros contidos. Porém, vale ressaltar que o design do painel encontra-se de uma forma rude.
+## :gem: Install
+
+![Size](https://img.shields.io/github/repo-size/tjmelo/tmx-appstore)
+
+Clone repo
+
+```sh
+git clone git@github.com:tjmelo/tmx-appstore.git
+```
+
+Install all packages dependence
+
+```sh
+npm install
+```
+
+or
+
+```sh
+yarn install
+```
+
+## :rocket: Running
+
+Running project
+
+```sh
+npm start
+```
+
+or
+
+```sh
+yarn start
+```
+
+## :game_die: Tests
+
+Running tests
+
+```sh
+npm test
+```
+
+or
+
+```sh
+yarn test
+```
+
+Have a code fun! :fire:

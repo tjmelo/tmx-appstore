@@ -1,0 +1,30 @@
+.slide {
+  height: 16em;
+  margin-bottom: 1.2em;
+  border: 1px solid var(--text-gray, #1987e8);
+  background: #f1f1f1;
+  border-radius: 4px;
+  div {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.title {
+  width: auto;
+  display: inline;
+  background: linear-gradient(to right, #056cdb, #00b3db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.area {
+  margin-top: -2.3rem;
+}

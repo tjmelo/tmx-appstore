@@ -1,0 +1,57 @@
+.color {
+  color: #545454;
+  font-weight: 400;
+  font-size: 0.875em;
+  margin: 1.2em 0;
+  display: flex;
+  flex-flow: row wrap;
+  p {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  input {
+    display: none;
+  }
+  input:checked + label::before {
+    background: var(--dark-gray);
+    border-color: transparent;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 0.5em;
+  }
+  label {
+    cursor: pointer;
+  }
+  label::before {
+    content: "";
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    border: 1px solid var(--dark-gray);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+}
+
+.messageWarning {
+  display: flex;
+  align-items: center;
+  font-size: 0.75em;
+  color: red;
+  background: pink;
+  border-radius: 4px;
+  padding: .5rem;
+  margin-top: 1rem;
+  .icon{
+      margin-right: .3em;
+      vertical-align: middle;
+      font-size: 1.4em;
+  }
+}

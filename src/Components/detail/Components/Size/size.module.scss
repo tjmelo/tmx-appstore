@@ -1,0 +1,43 @@
+.productSize {
+  color: #545454;
+  font-weight: 400;
+  font-size: 0.875em;
+  margin: 1.2em 0;
+}
+.groupOption {
+  position: relative;
+  display: inline-block;
+  margin: 0.7em 0.5em 1em 0;
+  input {
+    display: none;
+  }
+  label {
+    border: 1px solid var(--dark-gray);
+    color: var(--dark-gray);
+    padding: 0.4em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  :checked ~ label {
+    background: var(--dark-gray);
+    color: var(--white);
+  }
+}
+
+.messageWarning {
+    display: block;
+    font-size: 0.75em;
+    color: red;
+    background: pink;
+    border-radius: 4px;
+    padding: .5rem;
+    margin-top: 1rem;
+    .icon{
+        margin-right: .3em;
+        vertical-align: middle;
+        font-size: 1.4em;
+    }
+  }
