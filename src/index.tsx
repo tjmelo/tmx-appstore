@@ -4,9 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Loading } from "./Components/loading";
 
 const TMX = lazy(() => import("./Components/TMX"));
-const SideMenu = lazy(
-  () => import("./Components/sideMenu")
-);
+const SideMenu = lazy(() => import("./Components/sideMenu"));
 
 import { store } from "./store/store";
 import { Provider } from "react-redux";

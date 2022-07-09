@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { RootStateOrAny, useSelector } from "react-redux";
 import abstract from "./abstract.module.scss";
 import { FormatCurrency } from "../../utils/format-currency";
 

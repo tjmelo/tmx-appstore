@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { Loading } from "./loading";
 const Banner = lazy(() => import("./banner"));
@@ -12,41 +12,49 @@ const Promotions = lazy(() => import("./promotions"));
 // import { Painel } from "./crud/painel/painel";
 // import { ListProducts } from "./crud/list/listProducts";
 
+const Shoes = lazy(() => import("./shoes"))
+const Socks = lazy(() => import("./socks"))
+const Detail = lazy(() => import("./detail"))
+const Cart = lazy(() => import("./cart"))
+const Empty = lazy(() => import("./empty"))
+
 const Router = () => {
   return (
-    <Switch>
+    <Routes>
       <Route
         path="/shoes"
-        component={lazy(() => import("./shoes"))}
+        element={<Shoes />}
       />
       <Route
         path="/socks"
-        component={lazy(() => import("./socks"))}
+        element={<Socks />}
       />
       <Route
         path="/detail/:id"
-        component={lazy(() => import("./detail"))}
+        element={<Detail />}
       />
       <Route
         path="/cart"
-        component={lazy(() => import("./cart"))}
+        element={<Cart />}
       />
 
       <Route
         path="/empty"
-        component={lazy(() => import("./empty"))}
+        element={<Empty />}
       />
-      {/* <Route path="/filter/:category" component={Filter} /> */}
-      {/* <Route path="/login" component={Login} /> */}
-      {/* <Route path="/cadastre" component={Cadastre} /> */}
-      {/* <Route path="/painel/:id" component={Painel} /> */}
-      {/* <Route path="/list" component={ListProducts} /> */}
-      <Route exact path="/">
-        <Banner />
-        <Promotions />
-      </Route>
-      <Route exact path="*" component={Loading} />
-    </Switch>
+      {/* <Route path="/filter/:category" element={Filter} /> */}
+      {/* <Route path="/login" element={Login} /> */}
+      {/* <Route path="/cadastre" element={Cadastre} /> */}
+      {/* <Route path="/painel/:id" element={Painel} /> */}
+      {/* <Route path="/list" element={ListProducts} /> */}
+      <Route exact path="/" element={
+        <>
+          <Banner />
+          <Promotions />
+        </>} 
+      />
+      <Route exact path="*" element={Loading} />
+    </Routes>
   );
 };
 
