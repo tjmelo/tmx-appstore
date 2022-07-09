@@ -1,5 +1,5 @@
 import React, { useEffect, useState, lazy } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import detail from "./detail.module.scss";
 
@@ -23,7 +23,7 @@ declare interface DetailProps {}
 
 export const Detail: React.VFC<DetailProps> =
   (): JSX.Element => {
-    const link = useHistory();
+    const link: any = useNavigate();
     let { id } = useParams<{ id?: undefined }>();
 
     const dispatch = useDispatch();
@@ -61,7 +61,7 @@ export const Detail: React.VFC<DetailProps> =
             ...product[Number(id) - 1],
           })
         );
-        link.push("/cart");
+        link("/cart");
       }
     };
 

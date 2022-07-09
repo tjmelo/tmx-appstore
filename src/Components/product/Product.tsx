@@ -1,10 +1,9 @@
-import React, { lazy, useEffect, useState } from "react";
+import React, { lazy, useEffect } from "react";
 import {
   useDispatch,
   useSelector,
-  RootStateOrAny,
 } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import style from "./product.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons/faTrashAlt";
@@ -26,10 +25,10 @@ declare interface ProductProps {
 export const Product: React.VFC<ProductProps> = ({
   values,
 }): JSX.Element => {
-  let link = useHistory();
+  let link: any = useNavigate();
   const dispatch = useDispatch();
   const referenceItems: any = useSelector(
-    (state: RootStateOrAny): RootStateOrAny =>
+    (state: any) =>
       state.product.items
   );
 
