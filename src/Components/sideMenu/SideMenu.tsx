@@ -22,7 +22,7 @@ export const SideMenu = () => {
           <FontAwesomeIcon icon={faGem} />
           <span>TMX Store</span>
         </li>
-        <ItemMenu type="home" test="test-home" icon={faStore}/>
+        <ItemMenu test="test-home" icon={faStore}/>
         <ItemMenu type="shoes" test="test-shoes" icon={faShoePrints}/>
         <ItemMenu type="socks" test="test-socks" icon={faSocks}/>
       </ul>

@@ -4,9 +4,9 @@ import TMXStore from "./TMXStore";
 const Header = lazy(() => import("./header"));
 const Router = lazy(() => import("./Router"));
 
-interface TMXProps {}
+type TMXProps = {}
 
-const TMX: React.VFC<TMXProps> = () => {
+const TMX: React.FC<TMXProps> = () => {
   return (
     <TMXStore>
       <Header />

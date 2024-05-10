@@ -6,16 +6,18 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 type TIcon = {
     icon: IconDefinition,
-    type: string,
+    type?: string,
     test: string
 }
 
 export const ItemMenu = ({icon, type, test}: TIcon) => {
+    const itemTitle = type ? (`${type[0].toUpperCase()}${type.slice(1)}`) : 'Home'
+
     return (
         <li>
           <Link
-            to={`/${type}`}
-            title={`${type[0].toUpperCase()}${type.slice(1)}`}
+            to={`/${type || ''}`}
+            title={itemTitle}
             data-testid={test}
           >
             <FontAwesomeIcon icon={icon} />

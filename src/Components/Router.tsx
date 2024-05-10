@@ -6,7 +6,6 @@ const Banner = lazy(() => import("./banner"));
 const Promotions = lazy(() => import("./promotions"));
 
 // import { Filter } from "./filter/filter";
-// import { Cart } from "./cart/Cart";
 // import { Login } from "./crud/login/login";
 // import { Cadastre } from "./crud/cadastre/Cadastre";
 // import { Painel } from "./crud/painel/painel";
@@ -47,13 +46,13 @@ const Router = () => {
       {/* <Route path="/cadastre" element={Cadastre} /> */}
       {/* <Route path="/painel/:id" element={Painel} /> */}
       {/* <Route path="/list" element={ListProducts} /> */}
-      <Route exact path="/" element={
+      <Route path="/" element={
         <>
           <Banner />
           <Promotions />
         </>} 
       />
-      <Route exact path="*" element={Loading} />
+      <Route path="*" element={<Loading />} />
     </Routes>
   );
 };

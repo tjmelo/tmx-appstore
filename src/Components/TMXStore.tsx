@@ -1,14 +1,14 @@
 import React from "react";
 
-interface TMXStoreProps {
+type TMXStoreProps = {
   children: JSX.Element | JSX.Element[];
 }
 
-const TMXStore: React.VFC<TMXStoreProps> = ({
+const TMXStore: React.FC<TMXStoreProps> = ({
   children,
 }): JSX.Element => {
   return (
-    <section data-testid="tmx-store-scope" className="grid">
+    <section className="grid">
       {children}
     </section>
   );

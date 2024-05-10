@@ -1,16 +1,19 @@
 import React from "react";
+
 import { render } from "@testing-library/react";
+import '@testing-library/jest-dom';
+
 import TMXStore from "./TMXStore";
 
-describe("Should testing render scope app", () => {
-  it("Testing render platform scope app", () => {
-    const { getByTestId } = render(
-      <TMXStore>
-        <h1>App store</h1>
-      </TMXStore>
-    );
-    expect(
-      getByTestId("tmx-app-store")
-    ).toBeInTheDocument();
-  });
+const textForTest = 'App store test'
+
+describe("Should test render scope app", () => {
+    it('Should render TMX root component', () => {
+        const { getByText } = render(
+            <TMXStore>
+               <h1>{textForTest}</h1> 
+            </TMXStore>
+        )
+        expect(getByText(textForTest)).toBeInTheDocument();
+    })
 });

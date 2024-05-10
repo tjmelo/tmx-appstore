@@ -18,7 +18,7 @@
     "prestart": "node ./configs/welcome.mjs",
     "start": "react-scripts start & npm run server",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch ./src/db/db.json -p 3001"
   },

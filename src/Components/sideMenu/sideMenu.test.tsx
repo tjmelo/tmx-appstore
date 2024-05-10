@@ -9,9 +9,8 @@ import { BrowserRouter } from "react-router-dom";
 describe("Should render sidebar menu", () => {
   it("Testing render item TMX Store", () => {
     const { getByTestId } = render(
-      <BrowserRouter>
-        <SideMenu />
-      </BrowserRouter>
+        <SideMenu />, 
+        {wrapper: BrowserRouter}
     );
     expect(getByTestId("test-logo")).toBeInTheDocument();
     expect(getByTestId("test-home")).toBeInTheDocument();
