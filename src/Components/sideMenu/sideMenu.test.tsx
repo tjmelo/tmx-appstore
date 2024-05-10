@@ -1,6 +1,9 @@
 import React from "react";
+
 import { render } from "@testing-library/react";
-import { SideMenu } from "./sideMenu";
+import '@testing-library/jest-dom';
+
+import { SideMenu } from "./SideMenu";
 import { BrowserRouter } from "react-router-dom";
 
 describe("Should render sidebar menu", () => {
@@ -10,9 +13,9 @@ describe("Should render sidebar menu", () => {
         <SideMenu />
       </BrowserRouter>
     );
-    expect(getByTestId("logo")).toBeInTheDocument();
-    expect(getByTestId("home")).toBeInTheDocument();
-    expect(getByTestId("shoes")).toBeInTheDocument();
-    expect(getByTestId("socks")).toBeInTheDocument();
+    expect(getByTestId("test-logo")).toBeInTheDocument();
+    expect(getByTestId("test-home")).toBeInTheDocument();
+    expect(getByTestId("test-shoes")).toBeInTheDocument();
+    expect(getByTestId("test-socks")).toBeInTheDocument();
   });
 });
