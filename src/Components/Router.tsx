@@ -36,7 +36,7 @@ const Router = () => {
         path="/cart"
         element={<Cart />}
       />
-
+      
       <Route
         path="/empty"
         element={<Empty />}

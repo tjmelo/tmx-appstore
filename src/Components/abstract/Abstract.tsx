@@ -1,61 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import abstract from "./abstract.module.scss";
-import { FormatCurrency } from "../../utils/format-currency";
 
-declare interface AbstractProps {
-  subtotal: any;
-  discount: any;
+import { Resume } from "./Resume";
+
+import abstract from "./abstract.module.scss";
+
+type AbstractProps = {
+  subtotal: number;
+  discount: number;
 }
 
-export const Abstract: React.VFC<AbstractProps> = ({
-  subtotal,
-  discount,
-}) => {
+export const Abstract: React.FC<AbstractProps> = ({subtotal, discount}) => {
   return (
     <section className={abstract.area}>
       <h2 className={abstract.title}>Summary</h2>
       <div className={abstract.box}>
-        <div className={abstract.resume}>
-          <p>Subtotal:</p>
-          <p className={abstract.number}>
-            R${" "}
-            {new FormatCurrency(
-              subtotal,
-              2,
-              3,
-              ".",
-              ","
-            ).format()}
-          </p>
-        </div>
-        <div className={abstract.resume}>
-          <p>Discount:</p>
-          <p className={abstract.number}>
-            R${" "}
-            {new FormatCurrency(
-              discount,
-              2,
-              3,
-              ".",
-              ","
-            ).format()}
-          </p>
-        </div>
-        <div className={abstract.total}>
-          <h3 className={abstract.index}>Total</h3>
-          <h3 className={abstract.value}>
-            R${" "}
-            {new FormatCurrency(
-              subtotal,
-              2,
-              3,
-              ".",
-              ","
-            ).format()}
-          </h3>
-        </div>
+        <Resume title="Subtotal:" param={subtotal} />
+        <Resume title="Discount:" param={discount} />
+        <Resume header title="Total:" param={subtotal} />
       </div>
+
       <Link to="/" className={abstract.btnContinue}>
         <svg
           fill="#F08D06"
@@ -68,6 +32,7 @@ export const Abstract: React.VFC<AbstractProps> = ({
         </svg>
         Keep buying
       </Link>
+      
       <button className={abstract.btnFinal}>
         Finish order
       </button>
