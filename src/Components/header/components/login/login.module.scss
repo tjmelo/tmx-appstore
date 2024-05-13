@@ -1,29 +1,32 @@
 .login {
-  display: flex;
-  align-items: center;
-  flex-flow: nowrap;
-  font-size: 0.6875em;
-  margin: 0 1em;
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--black);
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
+    align-items: center;
+    display: flex;
+    flex-flow: nowrap;
+    font-size: 0.6875em;
+    margin: 0 1em;
+    
+    a {
+        color: var(--black);
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        &:hover,
+        &:focus {
+        text-decoration: underline;
+        }
   }
+  
   svg {
-    margin-right: 7px;
     font-size: 1.4em;
+    margin-right: 7px;
   }
+
   span {
     margin: 0 0.5em;
   }
 }
 .login {
-  svg {
-  }
+    
   span {
     margin: 0 0.5em;
   }
