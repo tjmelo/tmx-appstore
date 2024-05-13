@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement } from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import search from "./search.module.scss";
 
-type SearchProps = ReactNode | {}
+type SearchProps = ReactElement | unknown
 
 export const Search: React.FC<SearchProps> = (): JSX.Element => {
     return (
