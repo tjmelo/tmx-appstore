@@ -5,6 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended"
   ],
   "parserOptions": {
@@ -14,10 +15,16 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
   "rules": {
     "no-undef": 0,
     "react/prop-types": 0,
     "no-unused-vars": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

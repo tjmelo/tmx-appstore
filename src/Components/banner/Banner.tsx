@@ -8,10 +8,10 @@ interface BannerProps {}
 export const Banner: React.VFC<BannerProps> =
   (): JSX.Element => {
     const elem = useRef<HTMLElement | null>(null);
-    let alpha: any = elem.current;
+    let alpha: Element | null = elem.current;
     useEffect(() => {
       alpha = document.querySelector(".slider");
-      new Flickity(alpha, {
+      new Flickity(alpha!, {
         cellAlign: "left",
         autoPlay: 7500,
         pauseAutoPlayOnHover: false,

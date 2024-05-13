@@ -1,22 +1,26 @@
 .area {
-  width: 18em;
+    width: 18em;
 }
+
 .box {
-  background: var(--white);
-  box-shadow: 1px 1px 3px var(--gray);
-  padding: 1.125em 1.875em;
-  border-radius: 0.5rem;
-  p {
-    font-size: 0.65em;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+    background: var(--white);
+    box-shadow: 1px 1px 3px var(--gray);
+    border-radius: 0.5rem;
+    padding: 1.125em 1.875em;
+
+    p {
+        font-size: 0.65em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 }
+
 .box > div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
 .total {
   margin: 3.225em auto 1em;
   h3 {
@@ -25,79 +29,87 @@
     text-transform: uppercase;
   }
 }
+
 .index {
   color: #434343;
 }
+
 .value {
-  font-size: 1.2rem !important;
-  background: linear-gradient(
-    to right,
-    var(--green),
-    var(--secundary-green)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      to right,
+      var(--green),
+      var(--secundary-green)
+    );
+    font-size: 1.2rem !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .resume {
-  margin: 0.8em auto 2.3em;
+    margin: 0.8em auto 2.3em;
 }
+
 .title {
   font-size: 0.875rem;
-  text-transform: uppercase;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .btnFinal,
 .btnContinue {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.875em;
-  width: 100%;
-  cursor: pointer;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  margin: 7px 0;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px var(--gray);
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px var(--gray);
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875em;
+    justify-content: center;
+    margin: 7px 0;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    width: 100%;
+    -webkit-transition: all 0.2s linear;
 }
 .btnFinal {
-  padding: 1em;
-  font-weight: 600;
-  background: var(--secundary-green);
-  border: 1px solid var(--secundary-green);
-  color: var(--white);
-  &:hover,
-  &:focus {
+    background: var(--secundary-green);
+    border: 1px solid var(--secundary-green);
+    color: var(--white);
+    font-weight: 600;
     padding: 1em;
-    background: var(--green);
-    border: 1px solid var(--green);
-  }
+  
+    &:hover,
+    &:focus {
+        padding: 1em;
+        background: var(--green);
+        border: 1px solid var(--green);
+    }
 }
 .btnContinue {
-  padding: 0.7em;
-  font-weight: 400;
-  background: var(--white);
-  border: 1px solid var(--orange);
-  color: var(--orange);
-  text-decoration: none;
-  svg {
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    margin-right: 0.5em;
-  }
-  &:hover,
-  &:focus {
-    background: var(--orange);
+    background: var(--white);
     border: 1px solid var(--orange);
-    color: var(--white);
+    color: var(--orange);
+    font-weight: 400;
+    padding: 0.7em;
+    text-decoration: none;
+    
     svg {
-      fill: var(--white);
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        margin-right: 0.5em;
     }
-  }
+
+    &:hover,
+    &:focus {
+        background: var(--orange);
+        border: 1px solid var(--orange);
+        color: var(--white);
+    
+        svg {
+          fill: var(--white);
+        }
+    }
 }
 .number {
-  font-weight: 600 !important;
-  font-size: 1rem !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
 }
