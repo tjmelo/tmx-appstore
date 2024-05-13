@@ -20,4 +20,9 @@ test('Should render summary informations', () => {
         {wrapper: BrowserRouter}
     )
     expect(getByText('Summary')).toBeInTheDocument();
+    expect(getByText('Subtotal:')).toBeInTheDocument();
+    expect(getByText('Discount:')).toBeInTheDocument();
+    expect(getByText('Total:')).toBeInTheDocument();
+    expect(getByText('Keep buying')).toBeInTheDocument();
+    expect(getByText('Finish order')).toBeInTheDocument();
 })
