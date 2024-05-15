@@ -1,9 +1,9 @@
 .cart {
 
   a {
+      align-items: center;
       color: var(--black);
       border-left: 1px solid var(--black);
-      align-items: center;
       display: flex;
       flex-flow: nowrap;
       font-size: 0.6875em;
@@ -26,8 +26,8 @@
   position: relative;
 
   svg {
-    font-size: 2.3em;
     color: var(--dark-gray, #333333);
+    font-size: 2.3em;
   }
 }
 
