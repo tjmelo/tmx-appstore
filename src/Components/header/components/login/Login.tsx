@@ -6,10 +6,7 @@ import { Link } from "react-router-dom";
 
 import login from "./login.module.scss";
 
-interface LoginProps {}
-
-export const Login: React.VFC<LoginProps> =
-  (): JSX.Element => {
+export const Login: React.FC = (): JSX.Element => {
     return (
       <div className={login.login}>
         <FontAwesomeIcon icon={faUser} />

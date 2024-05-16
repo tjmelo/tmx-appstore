@@ -1,13 +1,13 @@
-import React, { lazy } from "react";
+import React, { lazy, ReactElement } from "react";
 import header from "./header.module.scss";
 
 const Search = lazy(() => import("./components/search"));
 const Login = lazy(() => import("./components/login"));
 const Cart = lazy(() => import("./components/cart"));
 
-interface HeaderProps {}
+type HeaderProps = ReactElement | unknown
 
-export const Header: React.VFC<HeaderProps> =
+export const Header: React.FC<HeaderProps> =
   (): JSX.Element => {
     return (
       <header className={header.header}>

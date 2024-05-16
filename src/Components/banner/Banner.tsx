@@ -1,22 +1,25 @@
-import React, { useEffect, useRef } from "react";
-import banner from "./banner.module.scss";
-import "flickity/dist/flickity.min.css";
+import React, { ReactNode, useEffect, useRef } from "react";
 import Flickity from "flickity";
 
-interface BannerProps {}
+import "flickity/dist/flickity.min.css";
+import banner from "./banner.module.scss";
 
-export const Banner: React.VFC<BannerProps> =
-  (): JSX.Element => {
+type BannerProps = ReactNode | unknown
+
+export const Banner: React.FC<BannerProps> = () => {
     const elem = useRef<HTMLElement | null>(null);
-    let alpha: Element | null = elem.current;
-    useEffect(() => {
-      alpha = document.querySelector(".slider");
-      new Flickity(alpha!, {
-        cellAlign: "left",
-        autoPlay: 7500,
-        pauseAutoPlayOnHover: false,
-      });
-    }, []);
+
+    const toFlickity = () => {
+        const alpha: Element | null = elem.current;
+        
+        new Flickity(alpha!, {
+          cellAlign: "left",
+          autoPlay: 7500,
+          pauseAutoPlayOnHover: false,
+        });
+    }
+
+    useEffect(() => { toFlickity() }, []);
 
     return (
       <section className={banner.area}>

@@ -1,19 +1,23 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 import cart from "./cart.module.scss";
-import { useSelector } from "react-redux";
 
-interface CartProps {}
+type CartProps = ReactElement | unknown
+type TState = {
+    product: {
+        items: string
+    }
+}
 
-export const Cart: React.VFC<CartProps> =
-  (): JSX.Element => {
-    const referenceItems: any = useSelector(
-      (state: any) =>
-        state.product.items
+export const Cart: React.FC<CartProps> = () => {
+    const referenceItems = useSelector(
+      (state: TState) => state.product.items
     );
     return (
       <div className={cart.cart}>

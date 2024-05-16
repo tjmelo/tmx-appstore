@@ -1,42 +1,47 @@
 .cart {
+
   a {
-    display: flex;
-    align-items: center;
-    flex-flow: nowrap;
-    font-size: 0.6875em;
-    margin: 0 1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--black);
-    border-left: 1px solid var(--black);
-    padding-left: 1.5em;
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+      align-items: center;
+      color: var(--black);
+      border-left: 1px solid var(--black);
+      display: flex;
+      flex-flow: nowrap;
+      font-size: 0.6875em;
+      margin: 0 1em;
+      padding-left: 1.5em;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+      &:hover,
+      &:focus {
+        text-decoration: underline;
     }
   }
+
   svg {
     margin-right: 7px;
   }
 }
 .amount {
   position: relative;
+
   svg {
-    font-size: 2.3em;
     color: var(--dark-gray, #333333);
+    font-size: 2.3em;
   }
 }
+
 .number {
-  background: var(--green);
-  color: var(--white);
-  border-radius: 100%;
-  width: 1em;
-  height: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7em;
-  position: absolute;
-  right: 0;
-  top: -0.3em;
+    align-items: center;
+    background: var(--green);
+    border-radius: 100%;
+    color: var(--white);
+    display: flex;
+    height: 1em;
+    justify-content: center;
+    padding: 0.7em;
+    position: absolute;
+    right: 0;
+    top: -0.3em;
+    width: 1em;
 }
