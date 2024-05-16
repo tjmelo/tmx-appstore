@@ -10,8 +10,7 @@ export const Banner: React.FC<BannerProps> = () => {
     const elem = useRef<HTMLElement | null>(null);
 
     const toFlickity = () => {
-        let alpha: Element | null = elem.current;
-        alpha = document.querySelector(".slider");
+        const alpha: Element | null = elem.current;
         
         new Flickity(alpha!, {
           cellAlign: "left",

@@ -3,10 +3,11 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import detail from "./detail.module.scss";
 
-import { getProducts } from "../../service/api";
+import { URLPRODUCTS } from "../../constants"
 
 import { useDispatch } from "react-redux";
 import { productItems } from "../../features/product/productSlice";
+import axios from "axios";
 
 const Breadcrumbs = lazy(
   () => import("./Components/Breadcumbs")
@@ -28,9 +29,9 @@ export const Detail: React.VFC<DetailProps> =
 
     const dispatch = useDispatch();
 
-    const [product, setProduct] = useState<any>("");
+    const [product, setProduct] = useState<string>("");
     useEffect(() => {
-      const allProducts = async () => await getProducts;
+      const allProducts = async () => await axios.get(URLPRODUCTS);
       allProducts().then((a) => setProduct(a.data));
     }, [id]);
 

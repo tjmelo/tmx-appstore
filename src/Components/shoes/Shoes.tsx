@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getShoes } from "../../service/api";
+import { URLPRODUCTS } from "../../constants";
 import { Cards } from "../cards/Cards";
+import axios from "axios";
 
 interface ShoesProps {}
 
@@ -9,10 +10,10 @@ export const Shoes: React.VFC<ShoesProps> =
     const [products, setProducts] = useState([]);
     useEffect(() => {
       (async () => {
-        const shoes = await getShoes;
+        const shoes = await axios.get(`${URLPRODUCTS}/?type=Shoes`);
         setProducts(shoes.data);
       })();
-    }, [products]);
+    }, []);
 
     return (
       <>

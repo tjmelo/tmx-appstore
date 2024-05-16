@@ -1,16 +1,14 @@
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
 import { Promotions } from "./Promotions";
-import { getProducts } from "../../service/api";
 import { BrowserRouter } from "react-router-dom";
+import '@testing-library/jest-dom'
 
 describe("Should render promotions", () => {
   it("Should render cards promotions list", async () => {
-    await getProducts;
     const { getByTestId } = render(
-      <BrowserRouter>
-        <Promotions />
-      </BrowserRouter>
+        <Promotions />,
+        {wrapper: BrowserRouter}
     );
     expect(
       await waitFor(() => getByTestId("cards"))
