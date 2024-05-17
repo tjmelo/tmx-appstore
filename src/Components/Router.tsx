@@ -20,27 +20,12 @@ const Empty = lazy(() => import("./empty"))
 const Router = () => {
   return (
     <Routes>
-      <Route
-        path="/shoes"
-        element={<Shoes />}
-      />
-      <Route
-        path="/socks"
-        element={<Socks />}
-      />
-      <Route
-        path="/detail/:id"
-        element={<Detail />}
-      />
-      <Route
-        path="/cart"
-        element={<Cart />}
-      />
+      <Route path="/shoes" element={<Shoes />}/>
+      <Route path="/socks" element={<Socks />}/>
+      <Route path="/detail/:id" element={<Detail />}/>
+      <Route path="/cart" element={<Cart />}/>
+      <Route path="/empty" element={<Empty />}/>
       
-      <Route
-        path="/empty"
-        element={<Empty />}
-      />
       {/* <Route path="/filter/:category" element={Filter} /> */}
       {/* <Route path="/login" element={Login} /> */}
       {/* <Route path="/cadastre" element={Cadastre} /> */}

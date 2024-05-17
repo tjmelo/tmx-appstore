@@ -1,43 +1,44 @@
 .title {
-  font-size: 1.25em;
-  line-height: 1.25em;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: -0.5em 0 2em;
-  color: var(--blue);
+    color: var(--blue);
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: -0.5em 0 2em;
+    text-transform: uppercase;
 }
 .button {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  width: 350px;
-  background: var(--secundary-green);
-  padding: 0.7em;
-  text-decoration: none;
-  color: var(--white);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius: 4px;
-  box-shadow: 0 2px 3px var(--gray);
-  &:hover,
-  &:focus {
-    background: var(--green);
-  }
+    align-items: center;
+    background: var(--secundary-green);
+    border-radius: 4px;
+    box-shadow: 0 2px 3px var(--gray);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 0.7em;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 350px;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+
+    &:hover,
+    &:focus {
+        background: var(--green);
+    }
 }
 
 article {
-  margin: 25vh auto;
-  text-align: center;
+    margin: 25vh auto;
+    text-align: center;
 }
 .titleMessage {
-  font-size: 1.25em;
-  color: var(--dark-gray);
+    font-size: 1.25em;
+    color: var(--dark-gray);
 }
 .message {
-  font-size: 1.125em;
-  font-weight: 400;
-  color: var(--gray-text);
-  margin: 1em 0;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--gray-text);
+    margin: 1em 0;
 }
