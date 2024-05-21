@@ -1,39 +1,32 @@
-import React, { lazy, useState } from "react";
-import cart from "./cart.module.scss";
+import React, { lazy, ReactNode, useState } from "react";
 import { subtotal, totalDiscount } from "./values";
+import cart from "./cart.module.scss";
 
 const Abstract = lazy(() => import("../abstract"));
 const Product = lazy(() => import("../product"));
 
-declare interface CartProps {}
+type CartProps = ReactNode | unknown
 
-export const Cart: React.VFC<CartProps> =
-  (): JSX.Element => {
+export const Cart: React.FC<CartProps> = (): JSX.Element => {
     const [qtdePay, setQtdePay] = useState<number>(0);
-    const [qtdeDiscount, setQtdeDiscount] =
-      useState<number>(0);
-    let orderPay: object[] = [],
-      orderDiscount: object[] = [];
+    const [qtdeDiscount, setQtdeDiscount] = useState<number>(0);
 
-    const geralValues = (values: object) => {
-      return (
-        setQtdePay(subtotal(values, orderPay)),
-        setQtdeDiscount(
-          totalDiscount(values, orderDiscount)
-        )
-      );
+    const orderPay: Array<object> = [], orderDiscount: Array<object> = [];
+
+    const getGeneralValues = (values: object) => {
+        return (
+            setQtdePay(subtotal(values, orderPay)),
+            setQtdeDiscount(totalDiscount(values, orderDiscount))
+        );
     };
 
     return (
-      <section className={cart.area}>
-        <h1 className={cart.title}>My cart</h1>
-        <div className={cart.content}>
-          <Product values={geralValues} />
-          <Abstract
-            subtotal={qtdePay}
-            discount={qtdeDiscount}
-          />
-        </div>
-      </section>
+        <section className={cart.area}>
+            <h1 className={cart.title}>My cart</h1>
+            <div className={cart.content}>
+                <Product values={getGeneralValues} />
+                <Abstract subtotal={qtdePay} discount={qtdeDiscount} />
+            </div>
+        </section>
     );
-  };
+};

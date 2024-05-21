@@ -1,33 +1,25 @@
-const subtotal = (
-  values: object,
-  arrayValues: object[]
-) => {
-  values && arrayValues.push(values);
-  const unity = arrayValues.map((e: any) => e.discount);
-  const group = unity.reduce(
-    (a: number, b: number) => a + b,
-    0
-  );
+const subtotal = (values: object, arrayValues: Array<any>) => {
+    values && arrayValues.push(values);
+    
+    const group = arrayValues
+        .map(({ discount }) => discount)
+        .reduce((a: number, b: number) => a + b, 0);
 
-  return group;
+    return group;
 };
 
-const totalDiscount = (
-  values: object,
-  arrayValues: object[]
-) => {
-  values && arrayValues.push(values);
-  const unity = arrayValues.map((e: any) => e.total);
-  const discount = arrayValues.map((e: any) => e.discount);
-  const groupTotal = unity.reduce(
-    (a: number, b: number) => a + b,
-    0
-  );
-  const groupDiscount = discount.reduce(
-    (a: number, b: number) => a + b,
-    0
-  );
-  return groupTotal - groupDiscount;
+const totalDiscount = (values: object, arrayValues: Array<any>) => {
+    values && arrayValues.push(values);
+    
+    const groupTotal = arrayValues
+        .map(({ total }) => total)
+        .reduce((a: number, b: number) => a + b, 0);
+    
+    const groupDiscount = arrayValues
+        .map(({ discount }) => discount)
+        .reduce((a: number, b: number) => a + b, 0);
+
+    return groupTotal - groupDiscount;
 };
 
 export { subtotal, totalDiscount };

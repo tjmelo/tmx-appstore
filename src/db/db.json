@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "title": "Shoes Nike Court Lite 2 Masc - White",
+      "title": "Shoes Nike Court Lite 2 Masc White",
       "name": "Shoes ",
       "color": ["Green", " Yellow", " Pink", " Blue"],
       "size": ["36", " 40", " 42"],
@@ -43,7 +43,7 @@
       "id": 3
     },
     {
-      "title": "Sock socket short tenessi sport action ",
+      "title": "Sock socket short tenessi sport action",
       "name": "Sock",
       "color": ["White"],
       "size": ["40", "42"],

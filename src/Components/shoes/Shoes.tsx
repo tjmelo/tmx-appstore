@@ -20,7 +20,7 @@ export const Shoes: React.VFC<ShoesProps> =
         <h1 className="title">Products</h1>
         <h2 className="subTitle">Featured Promotions</h2>
         <section
-          className="containerPromotions"
+          className="container-promotions"
           data-testid="shoes-promotions"
         >
           {products.map((el: any, idx: number) => (
