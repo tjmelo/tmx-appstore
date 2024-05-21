@@ -13,7 +13,7 @@ test('Should render summary informations', () => {
         <Provider store={store}>
         <BrowserRouter>
             <Suspense fallback={<div>Testing...</div>}>
-                
+                <Detail />
             </Suspense>
         </BrowserRouter>
       </Provider>)
