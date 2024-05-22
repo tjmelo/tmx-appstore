@@ -11,7 +11,7 @@ const colorProps = {
     verify: false
 }
 
-test('Should render summary informations', () => {
+test('Should render color component', () => {
     const { getByText } = render(
         <Color {...colorProps}/>
     )

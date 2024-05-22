@@ -4,7 +4,7 @@ import { faExclamationCircle } from "@fortawesome/free-solid-svg-icons/faExclama
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type ColorProps = {
-    color: any;
+    color: Array<string>;
     changeColor: (e: string) => void;
     verify: string | null | boolean;
 };
@@ -12,17 +12,16 @@ type ColorProps = {
 export const Color: React.FC<ColorProps> = ({ color, changeColor, verify }): JSX.Element => {
     const toChanged = (value: string) => changeColor(value);
 
-    const toSequenceColor = (el: string, idx: string) => (
+    const toSequenceColor = (el: string, idx: number) => (
         <span key={idx}>
             <input
                 type="radio"
                 name="color"
                 onChange={() => toChanged(el)}
                 value={el}
-                id={idx} />
-            <label htmlFor={idx}>{el}</label>
-        </span>
-    )
+                id={String(idx)} />
+            <label htmlFor={String(idx)}>{el}</label>
+        </span>)
 
     return (
         <div className={style.color}>
