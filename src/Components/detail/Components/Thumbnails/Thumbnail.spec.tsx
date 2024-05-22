@@ -15,7 +15,7 @@ test('Should render thumbnails informations', () => {
         <Thumbnails {...thumbnailsProps} />
     )
 
-    const imageTest = getAllByAltText('Thumbnail title test') as any;
+    const imageTest = getAllByAltText('Thumbnail title test') as Array<HTMLImageElement>;
     
     expect(getAllByAltText('Thumbnail title test')).toBeTruthy();
     expect(imageTest[0].src.includes('./image-thumbnail-test.png'));
