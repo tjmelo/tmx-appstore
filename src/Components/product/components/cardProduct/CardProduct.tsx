@@ -9,7 +9,9 @@ import style from "./cardProduct.module.scss";
 
 type CardProductsProps = {
     reference: {
-        id: number
+        id: number,
+        price: number,
+        discount: number
     };
     generalValues: CallableFunction
 }
