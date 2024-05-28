@@ -33,16 +33,15 @@ export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
     
     const deleteCart = () => dispatch(cleanItems());
 
+    const toListCardProducts = (el: {id: number}) => (
+        <CardProducts reference={el} geralValues={values} key={el.id} />
+    )
+
     return (
         <section className={style.area}>
             <TitleProduct />
-            {
-                referenceItems.map((el: {id: number}) => (
-                    <CardProducts reference={el} geralValues={values} key={el.id} />
-                ))
-            }
-
-            <Link onClick={() => deleteCart()} className={style.cleanCart} to="/empty">
+            {referenceItems.map(toListCardProducts)}
+            <Link onClick={deleteCart} className={style.cleanCart} to="/empty">
                 <FontAwesomeIcon icon={faTrashAlt} />
                 Clean cart
             </Link>

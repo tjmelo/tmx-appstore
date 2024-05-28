@@ -8,14 +8,17 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .details {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
 .info {
     width: 31.9642857%;
 }
+
 .btnBuy {
     background: var(--secundary-green);
     border: none;
@@ -25,8 +28,8 @@ h1 {
     cursor: pointer;
     font-size: 1em;
     font-weight: 800;
-    padding: 0.7em;
     margin: 1.1875em 0;
+    padding: 0.7em;
     width: 100%;
     text-transform: uppercase;
     transition: all 0.2s linear;
@@ -46,7 +49,7 @@ h1 {
     font-size: 0.875em;
     font-weight: 400;
     padding: 1em;
-    
+
     strong {
         font-weight: 600;
     }
@@ -60,8 +63,8 @@ h1 {
 .images {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     height: 25.375em;
+    justify-content: space-between;
     width: 65.196429%;
 }
 
@@ -72,9 +75,11 @@ h1 {
             color: var(--red) !important;
         }
     }
+
     p {
         color: var(--red);
     }
+
     span {
         label {
             color: var(--red) !important;

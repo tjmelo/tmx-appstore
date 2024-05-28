@@ -14,7 +14,7 @@ type CardsProps = {
     title: string;
     price: number;
     discount: number;
-}
+};
 
 export const Cards: React.FC<CardsProps> = ({
     id,
@@ -24,8 +24,8 @@ export const Cards: React.FC<CardsProps> = ({
     price,
     discount,
 }): JSX.Element => {
-    const setURLTitle = title?.replaceAll(' ','-').toLocaleLowerCase();
-    const toCacheChoosedItem = () => localStorage.setItem('INTEREST_ITEM',`${id}`)
+    const setURLTitle = title?.replaceAll(" ", "-").toLocaleLowerCase();
+    const toCacheChoosedItem = () => localStorage.setItem("INTEREST_ITEM", `${id}`);
 
     return (
         <Link to={`/detail/${setURLTitle}`} className={style.card} onClick={toCacheChoosedItem}>
