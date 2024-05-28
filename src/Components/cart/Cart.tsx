@@ -14,11 +14,12 @@ export const Cart: React.FC<CartProps> = (): JSX.Element => {
     const orderPay: Array<object> = [], orderDiscount: Array<object> = [];
 
     const getGeneralValues = (values: object) => {
-        return (
-            setQtdePay(subtotal(values, orderPay)),
-            setQtdeDiscount(totalDiscount(values, orderDiscount))
-        );
+        return {
+            valueToPay: setQtdePay(subtotal(values, orderPay)),
+            valueToDiscount: setQtdeDiscount(totalDiscount(values, orderDiscount))
+        };
     };
+
 
     return (
         <section className={cart.area}>

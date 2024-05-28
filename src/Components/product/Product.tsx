@@ -11,7 +11,7 @@ import { cleanItems } from "../../features/product/productSlice";
 import style from "./product.module.scss";
 
 type ProductProps = {
-    values: object;
+    values: CallableFunction;
 }
 
 type TState = {
@@ -34,7 +34,7 @@ export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
     const deleteCart = () => dispatch(cleanItems());
 
     const toListCardProducts = (el: {id: number}) => (
-        <CardProducts reference={el} geralValues={values} key={el.id} />
+        <CardProducts reference={el} generalValues={values} key={el.id} />
     )
 
     return (
