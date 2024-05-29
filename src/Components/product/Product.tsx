@@ -20,6 +20,12 @@ type TState = {
     }
 }
 
+type TReference = {
+    id: number,
+    price: number,
+    discount: number
+}
+
 export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
     const link = useNavigate();
     const dispatch = useDispatch();
@@ -30,10 +36,9 @@ export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
         if (referenceItems.length === 0) link("/empty");
     }, [referenceItems]);
     
-    
     const deleteCart = () => dispatch(cleanItems());
 
-    const toListCardProducts = (el: {id: number}) => (
+    const toListCardProducts = (el: TReference) => (
         <CardProducts reference={el} generalValues={values} key={el.id} />
     )
 
