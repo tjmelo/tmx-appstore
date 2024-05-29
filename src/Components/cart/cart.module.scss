@@ -1,13 +1,14 @@
 .content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 6.25em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.25em;
 }
+
 .title {
-  font-size: 1.25em;
-  line-height: 1.25em;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: -0.5em 0 2em;
-  color: var(--blue);
+    color: var(--blue);
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: -0.5em 0 2em;
+    text-transform: uppercase;
 }

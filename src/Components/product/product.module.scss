@@ -1,51 +1,57 @@
-.area > div {
-  display: flex;
-  margin-bottom: 1rem;
-  flex-flow: row nowrap;
-  position: relative;
-  padding: 0 0.5rem;
+.area {
+    & > div {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+        position: relative;
+    }
 }
 
 h2 {
-  color: var(--gray-text);
-  font-weight: 400;
-  font-size: 1.125em;
-  line-height: 1.75em;
+    color: var(--gray-text);
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 1.75em;
 }
+
 .cleanCart {
-  margin-top: 1em;
-  font-size: 0.75em;
-  color: #878787;
-  font-weight: 400;
-  float: right;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  svg {
-    display: inline-block;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-  }
-}
-.cleanCart:hover,
-.cleanCart:focus {
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  color: var(--green);
+    background: none;
+    border: none;
+    color: #878787;
+    cursor: pointer;
+    float: right;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 1em;
+    text-decoration: none;
+
+    svg {
+        display: inline-block;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    
+    &:hover,
+    &:focus {
+        color: var(--green);
+        transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+    }
 }
 
 .warningPromotion {
-  position: absolute;
-  left: 15.5em;
-  bottom: 2.3em;
-  color: var(--orange);
-  font-size: 10px;
+    bottom: 2.3em;
+    color: var(--orange);
+    font-size: 10px;
+    left: 15.5em;
+    position: absolute;
 }
+
 .warningPromotion {
-  svg {
-    font-size: 1.3em;
-    margin-right: 0.5em;
-  }
+    svg {
+        font-size: 1.3em;
+        margin-right: 0.5em;
+    }
 }

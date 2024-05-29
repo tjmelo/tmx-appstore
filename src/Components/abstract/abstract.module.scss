@@ -13,16 +13,17 @@
         font-weight: 400;
         text-transform: uppercase;
     }
-}
 
-.box > div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+    & > div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
 }
 
 .total {
   margin: 3.225em auto 1em;
+
   h3 {
     font-weight: 600;
     font-size: 0.875rem;

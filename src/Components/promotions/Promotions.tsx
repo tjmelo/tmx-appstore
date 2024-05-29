@@ -2,8 +2,6 @@ import React, { lazy, useEffect, useState } from "react";
 import axios from "axios";
 import { URLPRODUCTS } from "../../constants";
 
-import style from './promotion.module.scss';
-
 const Cards = lazy(() => import("../cards"));
 
 type TCards = {
@@ -45,7 +43,7 @@ export const Promotions = () => {
   return (
     <section
       data-testid="cards"
-      className={style['container-promotions']}
+      className="container-promotions"
     >
       {products.map(toMapListProducts)}
     </section>

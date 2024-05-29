@@ -1,45 +1,26 @@
-import React from 'react';
-import thumbnails from './thumbnails.module.scss';
+import React from "react";
+import thumbnails from "./thumbnails.module.scss";
 
-declare interface ThumbnailsProps {
-    image: string,
-    title: string,
+type ThumbnailsProps = {
+    image: string;
+    title: string;
 }
 
-export const Thumbnails:React.VFC<ThumbnailsProps> = ({
-    image,
-    title,
-}) => {
-    return(
+export const Thumbnails: React.FC<ThumbnailsProps> = ({ image, title }) => {
+    return (
         <div className={thumbnails.thumbnails}>
             <figure>
-            <img
-                src={image}
-                alt={title}
-                title={title}
-            />
+                <img src={image} alt={title} title={title} />
             </figure>
             <figure>
-            <img
-                src={image}
-                alt={title}
-                title={title}
-            />
+                <img src={image} alt={title} title={title} />
             </figure>
             <figure>
-            <img
-                src={image}
-                alt={title}
-                title={title}
-            />
+                <img src={image} alt={title} title={title} />
             </figure>
             <figure>
-            <img
-                src={image}
-                alt={title}
-                title={title}
-            />
+                <img src={image} alt={title} title={title} />
             </figure>
         </div>
-    )
-}
+    );
+};

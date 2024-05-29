@@ -20,7 +20,7 @@ export const Socks: React.VFC<SocksProps> =
         <h1 className="title">Produtos</h1>
         <h2 className="subTitle">Promoções em destaque</h2>
         <section
-          className="containerPromotions"
+          className="container-promotions"
           data-testid="socks-promotions"
         >
           {products.map((el: any, idx: number) => (
