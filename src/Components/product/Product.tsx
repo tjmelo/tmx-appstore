@@ -8,6 +8,8 @@ const TitleProduct = lazy(() => import("./components/titleProducts"));
 const CardProducts = lazy(() => import("./components/cardProduct"));
 
 import { cleanItems } from "../../features/product/productSlice";
+import { CART } from "../../utils/constants";
+
 import style from "./product.module.scss";
 
 type ProductProps = {
@@ -36,7 +38,7 @@ export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
     const referenceItems = useSelector((state: TState) => state.product.items);
     
     useEffect(() => {
-        sessionStorage.setItem("CART", JSON.stringify(referenceItems));
+        sessionStorage.setItem(CART, JSON.stringify(referenceItems));
         if (referenceItems.length === 0) link("/empty");
     }, [referenceItems]);
     
