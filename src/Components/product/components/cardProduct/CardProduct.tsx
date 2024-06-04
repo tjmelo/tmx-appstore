@@ -12,6 +12,11 @@ type CardProductsProps = {
         id: number,
         price: number,
         discount: number,
+        image: string,
+        title: string,
+        colorChoose: string,
+        sizeChoose: Array<string>
+        
     };
     generalValues: CallableFunction
 }

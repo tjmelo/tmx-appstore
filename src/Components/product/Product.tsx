@@ -23,7 +23,11 @@ type TState = {
 type TReference = {
     id: number,
     price: number,
-    discount: number
+    discount: number,
+    image: string,
+    title: string,
+    colorChoose: string,
+    sizeChoose: Array<string>
 }
 
 export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {

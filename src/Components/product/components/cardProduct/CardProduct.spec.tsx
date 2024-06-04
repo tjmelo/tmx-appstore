@@ -12,7 +12,11 @@ import TotalProducts from "../totalProducts";
 const reference = {
     id: 99,
     price: 450,
-    discount: 100
+    discount: 100,
+    image: '/image-test/test.png',
+    title: 'Test title',
+    colorChoose: 'Color test',
+    sizeChoose: ['00, 66, 99']
 }
 
 const referenceProps = { reference }
