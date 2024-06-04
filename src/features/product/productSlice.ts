@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { CART } from "../../utils/constants";
+import { CART } from "../../constants";
 
 type TypeSelectProduct = {
     product: {
