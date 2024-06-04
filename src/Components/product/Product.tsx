@@ -8,6 +8,8 @@ const TitleProduct = lazy(() => import("./components/titleProducts"));
 const CardProducts = lazy(() => import("./components/cardProduct"));
 
 import { cleanItems } from "../../features/product/productSlice";
+import { CART } from "../../utils/constants";
+
 import style from "./product.module.scss";
 
 type ProductProps = {
@@ -20,20 +22,29 @@ type TState = {
     }
 }
 
+type TReference = {
+    id: number,
+    price: number,
+    discount: number,
+    image: string,
+    title: string,
+    colorChoose: string,
+    sizeChoose: Array<string>
+}
+
 export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
     const link = useNavigate();
     const dispatch = useDispatch();
     const referenceItems = useSelector((state: TState) => state.product.items);
     
     useEffect(() => {
-        sessionStorage.setItem("CART", JSON.stringify(referenceItems));
+        sessionStorage.setItem(CART, JSON.stringify(referenceItems));
         if (referenceItems.length === 0) link("/empty");
     }, [referenceItems]);
     
-    
     const deleteCart = () => dispatch(cleanItems());
 
-    const toListCardProducts = (el: {id: number}) => (
+    const toListCardProducts = (el: TReference) => (
         <CardProducts reference={el} generalValues={values} key={el.id} />
     )
 

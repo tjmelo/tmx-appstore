@@ -11,7 +11,12 @@ type CardProductsProps = {
     reference: {
         id: number,
         price: number,
-        discount: number
+        discount: number,
+        image: string,
+        title: string,
+        colorChoose: string,
+        sizeChoose: Array<string>
+        
     };
     generalValues: CallableFunction
 }
@@ -21,7 +26,7 @@ export const CardProducts: React.FC<CardProductsProps> = ({
     generalValues,
 }): JSX.Element => {
 
-    const [values, setValues] = useState<unknown | number>(0);
+    const [values, setValues] = useState<any>(0);
 
     const getValues = (values: object) => {
         const id = reference.id;
@@ -32,7 +37,7 @@ export const CardProducts: React.FC<CardProductsProps> = ({
     useEffect(() => generalValues(values), [getValues]);
 
     return (
-        <div className={style["detail-products"]}>
+        <div className={style["detail-products"]} data-testid="box-card-products">
             <InfoProduct reference={reference} />
             <LogicProducts reference={reference} getValues={getValues} />
             <UnitProducts reference={reference} />
