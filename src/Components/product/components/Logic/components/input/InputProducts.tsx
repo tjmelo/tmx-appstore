@@ -1,20 +1,17 @@
 import React from "react";
+
 import style from "./inputProducts.module.scss";
 
-declare interface InputProductsProps {
-  value: string;
+type InputProductsProps = {
+    value: string;
 }
 
-export const InputProducts: React.VFC<InputProductsProps> =
-  ({ value }): JSX.Element => {
-    //   let inputReference = useRef(null);
+export const InputProducts: React.FC<InputProductsProps> = ({ value }): JSX.Element => {
     return (
-      <input
-        //   ref={inputReference}
-        className={style.input}
-        onChange={() => {}}
-        value={value}
-        // maxLength="2"
-      />
+        <input
+            className={style.input}
+            onChange={() => {}}
+            value={value}
+        />
     );
-  };
+};
