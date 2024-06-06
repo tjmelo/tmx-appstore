@@ -5,17 +5,20 @@
     justify-content: center;
     padding: 1em 2.8em;
 }
+
 .vreal {
     color: var(--secondary-gray);
     font-size: 0.75em;
     line-height: 1.75em;
     text-decoration: line-through;
 }
+
 .vdiscount {
     color: var(--dark-gray);
     font-size: 1em;
     font-weight: 600;
 }
+
 .unitary {
     ul {
         background: var(--white);
@@ -24,6 +27,7 @@
         flex-flow: row nowrap;
     }
 }
+
 .unitary {
     input {
         border: none;

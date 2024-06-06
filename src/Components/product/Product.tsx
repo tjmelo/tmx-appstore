@@ -8,7 +8,7 @@ const TitleProduct = lazy(() => import("./components/titleProducts"));
 const CardProducts = lazy(() => import("./components/cardProduct"));
 
 import { cleanItems } from "../../features/product/productSlice";
-import { CART } from "../../utils/constants";
+import { CART } from "../../constants";
 
 import style from "./product.module.scss";
 
