@@ -15,8 +15,10 @@ type CardProductsProps = {
         image: string,
         title: string,
         colorChoose: string,
-        sizeChoose: Array<string>
-        
+        sizeChoose: Array<string>,
+        promo: string,
+        index: number,
+        promotion: string,
     };
     generalValues: CallableFunction
 }
