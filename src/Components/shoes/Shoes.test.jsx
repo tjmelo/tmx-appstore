@@ -1,19 +1,18 @@
 import React from "react";
-import { waitFor, render } from "@testing-library/react";
+import '@testing-library/jest-dom';
+
+import { render } from "@testing-library/react";
 import { Shoes } from "./Shoes";
 import { BrowserRouter } from "react-router-dom";
-import { getShoes } from "../../service/api";
 
 describe("Should render shoes", () => {
   it("Should render items shoes", async () => {
-    await getShoes;
-    const { getByTestId } = render(
-      <BrowserRouter>
-        <Shoes />
-      </BrowserRouter>
+    const { getByText, getByTestId } = render(
+        <Shoes />, {wrapper: BrowserRouter}
     );
-    expect(
-      await waitFor(() => getByTestId("shoes-promotions"))
-    ).toBeInTheDocument();
+    
+    expect(getByText('Products')).toBeInTheDocument();
+    expect(getByText('Featured Promotions')).toBeInTheDocument();
+    expect(getByTestId('shoes-promotions')).toBeInTheDocument();
   });
 });

@@ -3,7 +3,7 @@ import { URLPRODUCTS } from "../../constants";
 import { Cards } from "../cards/Cards";
 import axios from "axios";
 
-type TCard = {
+type TCardSocks = {
     id: number,
     promotion: string,
     image: string,
@@ -22,8 +22,8 @@ export const Socks: React.FC = (): JSX.Element => {
         })();
     }, []);
 
-    const toListCards = () => {
-        return products.map((el: TCard, idx: number) => (
+    const toListCardItems = () => {
+        return products.map((el: TCardSocks, idx: number) => (
             <Cards
                 key={idx}
                 id={el.id}
@@ -41,7 +41,7 @@ export const Socks: React.FC = (): JSX.Element => {
             <h1 className="title">Produtos</h1>
             <h2 className="subTitle">Promoções em destaque</h2>
             <section className="container-promotions" data-testid="socks-promotions">
-                {toListCards()}
+                {toListCardItems()}
             </section>
         </>
     );
