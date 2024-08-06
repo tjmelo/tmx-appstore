@@ -16,7 +16,10 @@ const reference = {
     image: '/image-test/test.png',
     title: 'Test title',
     colorChoose: 'Color test',
-    sizeChoose: ['00, 66, 99']
+    sizeChoose: ['00, 66, 99'],
+    promo: "",
+    index: 0,
+    promotion: ""
 }
 
 const referenceProps = { reference }
@@ -42,7 +45,7 @@ const cardProductProps = {
 
 const logicProductsProps = {
     reference,
-    getValues: undefined
+    getValues: () => true
 }
 
 

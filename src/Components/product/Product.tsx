@@ -29,7 +29,10 @@ type TReference = {
     image: string,
     title: string,
     colorChoose: string,
-    sizeChoose: Array<string>
+    sizeChoose: Array<string>,
+    promo: string,
+    index: number,
+    promotion: string,
 }
 
 export const Product: React.FC<ProductProps> = ({ values }): JSX.Element => {
