@@ -20,7 +20,6 @@ export const Cart: React.FC<CartProps> = (): JSX.Element => {
         };
     };
 
-
     return (
         <section className={cart.area}>
             <h1 className={cart.title}>My cart</h1>

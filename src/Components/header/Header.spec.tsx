@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
-import { render, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom'
+import { render, waitFor } from "@testing-library/react";
 
 import { Header } from "./Header";
 import { store } from "../../store/store";
@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
 describe("Should testing header", () => {
-  it("Testing render elements header", async() => {
+  it("Testing render elements header", async () => {
     const { getByTestId } = render(
       <Provider store={store}>
         <BrowserRouter>
@@ -25,5 +25,6 @@ describe("Should testing header", () => {
         expect(getByTestId("register")).toBeInTheDocument();
         expect(getByTestId("cart")).toBeInTheDocument();        
     })
+
   });
 });

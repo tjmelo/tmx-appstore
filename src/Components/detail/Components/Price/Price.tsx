@@ -12,10 +12,17 @@ export const Price: React.FC<PriceProps> = ({ price, discount }): JSX.Element =>
     return (
         <>
             <p className={style.realPrice}>
-                R$ {new FormatCurrency(price ? price : 0, 2, 3, ".", ",").format()}
+                R$ {
+                    discount
+                    && new FormatCurrency(price ? price : 0, 2, 3, ".", ",").format()
+                }
             </p>
             <p className={style.discountPrice}>
-                R$ {new FormatCurrency(discount ? discount : 0, 2, 3, ".", ",").format()}
+                R$ { 
+                    price 
+                    ? new FormatCurrency(discount ? discount : 0, 2, 3, ".", ",").format()
+                    : '...'
+                }
             </p>
         </>
     );

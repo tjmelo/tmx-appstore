@@ -5,8 +5,8 @@ const products = axios.create({
   timeout: 1000,
 });
 
-export const urlProducts: string = `http://localhost:3001/products`;
-export const urlUser: string = `http://localhost:3001/user`;
+// export const urlProducts: string = `http://localhost:3001/products`;
+// export const urlUser: string = `http://localhost:3001/user`;
 
 const getProducts = products.get('');
 const getShoes = products.get(`?type=Shoes`);

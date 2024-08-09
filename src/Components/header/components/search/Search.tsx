@@ -16,8 +16,7 @@ export const Search: React.FC<SearchProps> = (): JSX.Element => {
           placeholder="What are you looking for?"
           type="search"
         />
-        <button 
-            role="button"
+        <button
             type="submit"> 
                 <FontAwesomeIcon icon={faSearch} />
         </button>

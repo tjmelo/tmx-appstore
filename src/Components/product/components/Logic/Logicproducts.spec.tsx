@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom';
 
 import LogicProducts from ".";
@@ -20,7 +20,7 @@ const dataTest = {
     getValues: () => true
 }
 
-test('Should render unit product informations', () => {
+test('Should render unit product informations', async () => {
     const { getByText, getByTitle } = render(
         <Provider store={store}>
             <BrowserRouter>
@@ -30,6 +30,8 @@ test('Should render unit product informations', () => {
             </BrowserRouter>
         </Provider>)
 
-    expect(getByText('remove')).toBeInTheDocument();
-    expect(getByTitle('Remove this product')).toBeInTheDocument();
+    waitFor(() => {
+        expect(getByText('remove')).toBeInTheDocument();
+        expect(getByTitle('Remove this product')).toBeInTheDocument();
+    })
 })

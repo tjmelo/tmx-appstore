@@ -1,11 +1,10 @@
-import React, { lazy, useEffect, useState } from "react";
+import React, { lazy, useCallback, useEffect, useState } from "react";
+import style from "./cardProduct.module.scss";
 
 const InfoProduct = lazy(() => import("../infoProducts"));
 const UnitProducts = lazy(() => import("../unitProducts"));
 const TotalProducts = lazy(() => import("../totalProducts"));
 const LogicProducts = lazy(() => import("../Logic"));
-
-import style from "./cardProduct.module.scss";
 
 type CardProductsProps = {
     reference: {
@@ -28,15 +27,18 @@ export const CardProducts: React.FC<CardProductsProps> = ({
     generalValues,
 }): JSX.Element => {
 
+    
     const [values, setValues] = useState<any>(0);
-
-    const getValues = (values: object) => {
+    
+    const getValues = useCallback((values: object) => {
         const id = reference.id;
-        const concatenatedValues = { id, ...values };
+        const concatenatedValues = { id, ...values }
         setValues(concatenatedValues);
-    };
+    }, [reference.id]);
 
-    useEffect(() => generalValues(values), [getValues]);
+    useEffect(() => {
+        generalValues(values)
+    });
 
     return (
         <div className={style["detail-products"]} data-testid="box-card-products">

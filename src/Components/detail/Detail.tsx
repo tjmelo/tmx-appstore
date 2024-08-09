@@ -1,3 +1,6 @@
+import { URLPRODUCTS } from "../../constants";
+import detail from "./detail.module.scss";
+
 import React, { useEffect, useState, lazy, ReactNode } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -7,8 +10,6 @@ const Thumbnails = lazy(() => import("./Components/Thumbnails"));
 const Image = lazy(() => import("./Components/Image"));
 const Info = lazy(() => import("./Info"))
 
-import { URLPRODUCTS } from "../../constants";
-import detail from "./detail.module.scss";
 
 type DetailProps = ReactNode | unknown
 
@@ -30,9 +31,9 @@ export const Detail: React.FC<DetailProps> = (): JSX.Element => {
     const [product, setProduct] = useState<[]>([]);
 
     const getDataFromAPI = async () => {
-        const getAllProducts = await axios.get(URLPRODUCTS);
+        const getAllProducts = await axios.get(`${URLPRODUCTS}/products?key=${process.env.REACT_APP_API_KEY}`);
         const { data } = getAllProducts;
-        setProduct(data);
+        setProduct(data.products);
     }
     
     useEffect(() => { getDataFromAPI() }, [id]);
