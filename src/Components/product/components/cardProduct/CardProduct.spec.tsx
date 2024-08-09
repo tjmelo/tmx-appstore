@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom';
 
 import CardProducts from "./";
@@ -49,7 +49,7 @@ const logicProductsProps = {
 }
 
 
-test('Should render summary informations', () => {
+test('Should render summary informations', async () => {
     const { getByTestId } = render(
         <Suspense fallback={<div>Testing...</div>}>
             <CardProducts {...cardProductProps}>
@@ -60,5 +60,8 @@ test('Should render summary informations', () => {
             </CardProducts>
         </Suspense>
     )
-    expect(getByTestId('box-card-products')).toBeInTheDocument();
+
+    waitFor(() => {
+        expect(getByTestId('box-card-products')).toBeInTheDocument();
+    })
 })

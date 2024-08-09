@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom';
 
 import Info, { TInfo } from "./Info";
@@ -24,7 +24,7 @@ const infoProps: TInfo = {
     }
 }
 
-test('Should render summary informations', () => {
+test('Should render summary informations', async () => {
     const { getByText, getByTestId } = render(
         <Provider store={store}>
         <BrowserRouter>
@@ -34,7 +34,9 @@ test('Should render summary informations', () => {
         </BrowserRouter>
       </Provider>)
 
-    expect(getByTestId('test-information')).toBeInTheDocument();
-    expect(getByText('Promotion available for this product!')).toBeInTheDocument();
-    expect(getByText('Buy')).toBeInTheDocument();
+    await waitFor(() => {
+        expect(getByTestId('test-information')).toBeInTheDocument();
+        expect(getByText('Promotion available for this product!')).toBeInTheDocument();
+        expect(getByText('Buy')).toBeInTheDocument();
+    })
 })

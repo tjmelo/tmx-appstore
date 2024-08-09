@@ -1,3 +1,2 @@
-export const URLPRODUCTS = `http://localhost:3001/products`;
-export const URLUSERS = `http://localhost:3001/user`;
+export const URLPRODUCTS = `https://my.api.mockaroo.com`;
 export const CART = 'CART'

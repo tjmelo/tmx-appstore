@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom';
 
 import Product from ".";
@@ -13,7 +13,7 @@ const dataTest = {
     
 }
 
-test('Should render product informations', () => {
+test('Should render product informations', async () => {
     const { getByText } = render(
         <Provider store={store}>
         <BrowserRouter>
@@ -24,5 +24,7 @@ test('Should render product informations', () => {
       </Provider>
     )
 
-    expect(getByText('Clean cart')).toBeInTheDocument();
+    await waitFor(() => {
+        expect(getByText('Clean cart')).toBeInTheDocument();
+    })
 })

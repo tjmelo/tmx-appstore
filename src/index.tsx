@@ -1,18 +1,18 @@
 import React, { lazy, Suspense } from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Loading } from "./Components/loading";
+import { store } from "./store/store";
+import { Provider } from "react-redux";
+import { createRoot } from 'react-dom/client';
+
+import "./style.scss";
 
 const TMX = lazy(() => import("./Components/TMX"));
 const SideMenu = lazy(() => import("./Components/sideMenu"));
 
-import { store } from "./store/store";
-import { Provider } from "react-redux";
+const root = createRoot(document.getElementById('root') as HTMLElement)
 
-import "./style.scss";
-
-ReactDOM.render(
-  <React.StrictMode>
+root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Suspense fallback={<Loading />}>
@@ -21,6 +21,4 @@ ReactDOM.render(
         </Suspense>
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
 );

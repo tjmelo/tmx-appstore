@@ -1,14 +1,13 @@
-import React, { useReducer, lazy, useEffect, useState } from "react";
+import React, { useReducer, lazy, useEffect, useState, useCallback } from "react";
 import { useDispatch } from "react-redux";
-
-const InputProducts = lazy(() => import("./components/input"));
-const ButtonsProducts = lazy(() => import("./components/button"));
-const MessagePromotionProducts = lazy(() => import("../MessagePromotionProducts"));
-
 import { removeItems } from "../../../../features/product/productSlice";
 import { logicalProducts } from "../../../../utils/logical-products";
 
 import style from "./logicProducts.module.scss";
+
+const InputProducts = lazy(() => import("./components/input"));
+const ButtonsProducts = lazy(() => import("./components/button"));
+const MessagePromotionProducts = lazy(() => import("../MessagePromotionProducts"));
 
 type LogicProductsProps = {
     reference: {
@@ -33,7 +32,7 @@ export const LogicProducts: React.FC<LogicProductsProps> = ({
 
     const removeItem = (id: number) => dispatch(removeItems(id));
 
-    const calcTotalValue = () => {
+    const calcTotalValue = useCallback(() => {
         const discount = reference.promo === "1"
             ? Math.floor(state.qtde / 2 + (state.qtde % 2)) * reference.discount
             : reference.promo === "2"
@@ -42,9 +41,9 @@ export const LogicProducts: React.FC<LogicProductsProps> = ({
 
         const total = state.qtde * reference.price;
         return getValues({ discount, total });
-    };
+    }, [state, getValues, reference.discount, reference.price, reference.promo]);
 
-    useEffect(() => calcTotalValue(), [state]);
+    useEffect(() => calcTotalValue(), [state, calcTotalValue]);
 
     const [disabled, setDisabled] = useState<boolean>(true);
 

@@ -1,16 +1,13 @@
+import { useDispatch } from "react-redux";
 import React, { useState, useEffect, lazy} from "react";
+import { productItems } from "../../features/product/productSlice";
+import { useNavigate } from "react-router-dom";
+import { TProductElement } from "./Detail";
+import detail from "./detail.module.scss";
 
 const Color = lazy(() => import("./Components/Color"));
 const Size = lazy(() => import("./Components/Size"));
 const Price = lazy(() => import("./Components/Price"));
-
-import { useDispatch } from "react-redux";
-
-import { productItems } from "../../features/product/productSlice";
-import { useNavigate } from "react-router-dom";
-import { TProductElement } from "./Detail";
-
-import detail from "./detail.module.scss";
 
 export type TInfo = {
     product:[],
