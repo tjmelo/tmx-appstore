@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktmx_appstore=self.webpackChunktmx_appstore||[]).push([[817],{7817:(t,e,a)=>{a.r(e),a.d(e,{default:()=>l});a(5043);const s="image_view__qFcGI",i="image_loading__sNxDG";var c=a(579);const l=t=>{let{image:e,title:a}=t;return(0,c.jsx)("div",{"data-testid":"test-image",className:s,children:e?(0,c.jsx)("img",{src:e,alt:a,title:a}):(0,c.jsx)("img",{className:i,alt:"",src:"".concat("/tmx-appstore","/loading.gif")})})}}}]);
-//# sourceMappingURL=817.c21cfa58.chunk.js.map
