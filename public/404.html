@@ -1,0 +1,23 @@
+<!-- In public/404.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    var l = window.location;
+    // Adjust pathSegmentsToKeep if your site uses subdirectoriesss
+    var pathSegmentsToKeep = 1;
+    l.replace(
+      l.protocol + '//' + l.hostname +
+      (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') +
+      '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/') +
+      (l.search ? '&' + l.search.slice(1) : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>

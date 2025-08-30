@@ -31,7 +31,7 @@ export const ListProducts = () => {
         <div className={list.boxList} key={idx}>
           <div className={list.listUni}>
             <figure>
-              <img src={el.image} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/${el.image}`} alt="" />
             </figure>
             <p className={list.info}>{el.title}</p>
             <p>{el.category}</p>
