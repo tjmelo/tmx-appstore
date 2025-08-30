@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktmx_appstore=self.webpackChunktmx_appstore||[]).push([[479],{1479:(e,s,t)=>{t.r(s),t.d(s,{default:()=>d});var n=t(5043),r=t(579);const a=e=>{let{children:s}=e;return(0,r.jsx)("section",{className:"grid",children:s})},l=(0,n.lazy)(()=>t.e(732).then(t.bind(t,8732))),c=(0,n.lazy)(()=>t.e(158).then(t.bind(t,5158))),d=()=>(0,r.jsxs)(a,{children:[(0,r.jsx)(l,{}),(0,r.jsx)(c,{})]})}}]);
+//# sourceMappingURL=479.006a508f.chunk.js.map

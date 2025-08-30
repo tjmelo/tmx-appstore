@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[629],{3629:(t,s,e)=>{e.r(s),e.d(s,{default:()=>c});e(5043);const l="buttonProducts_substract__i-98K";var a=e(579);const c=t=>{let{title:s,simbol:e,disabled:c,fn:n}=t;return(0,a.jsx)("button",{className:l,onClick:n,title:s,disabled:c,children:e})}}}]);
-//# sourceMappingURL=629.29111100.chunk.js.map

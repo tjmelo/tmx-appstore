@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktmx_appstore=self.webpackChunktmx_appstore||[]).push([[122],{5884:(s,e,a)=>{a.r(e),a.d(e,{default:()=>h});a(5043);var t=a(7929),r=a(3910);const c="search_search__50L8a";var o=a(579);const h=()=>(0,o.jsxs)("form",{action:"",className:c,"data-testid":"search",children:[(0,o.jsx)("input",{placeholder:"What are you looking for?",type:"search"}),(0,o.jsx)("button",{type:"submit",children:(0,o.jsx)(r.g,{icon:t.MjD})})]})}}]);
+//# sourceMappingURL=122.9be538b4.chunk.js.map

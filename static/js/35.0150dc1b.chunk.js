@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktmx_appstore=self.webpackChunktmx_appstore||[]).push([[35],{2035:(s,e,t)=>{t.r(e),t.d(e,{default:()=>c});t(5043);var a=t(3910),i=t(2916),n=t(5475);const r="login_login__HjNXd";var d=t(579);const c=()=>(0,d.jsxs)("div",{className:r,children:[(0,d.jsx)(a.g,{icon:i.X46}),(0,d.jsx)(n.N_,{"data-testid":"login",to:"/login",children:"Login"}),(0,d.jsx)("span",{children:"|"}),(0,d.jsx)(n.N_,{"data-testid":"register",to:"/cadastre",children:"Register"})]})}}]);
+//# sourceMappingURL=35.0150dc1b.chunk.js.map

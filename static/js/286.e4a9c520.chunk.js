@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktmx_appstore=self.webpackChunktmx_appstore||[]).push([[286],{8286:(t,e,s)=>{s.r(e),s.d(e,{default:()=>n});s(5043);const u="inputProducts_input__qRLPS";var a=s(579);const n=t=>{let{value:e}=t;return(0,a.jsx)("input",{className:u,onChange:()=>{},value:e})}}}]);
+//# sourceMappingURL=286.e4a9c520.chunk.js.map
