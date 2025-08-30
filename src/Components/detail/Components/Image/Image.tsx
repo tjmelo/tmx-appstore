@@ -11,8 +11,8 @@ export const Image: React.FC<ImageProps> = ({ image, title }): JSX.Element => {
         <div data-testid="test-image" className={style.view}>
             {
                 image 
-                ? <img src={image} alt={title} title={title} />
-                : <img className={style.loading} alt="" src="/loading.gif" />
+                ? <img src={`${process.env.PUBLIC_URL}/${image}`} alt={title} title={title} />
+                : <img className={style.loading} alt="" src={`${process.env.PUBLIC_URL}/loading.gif`} />
             }
             
         </div>

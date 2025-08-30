@@ -15,7 +15,7 @@ export const InfoProduct: React.FC<InfoProductProps> = React.memo(({ reference }
         <div className={style.content}>
             <div className={style.product}>
                 <figure>
-                    <img src={reference.image} title={reference.title} alt={reference.title} />
+                    <img src={`${process.env.PUBLIC_URL}/${reference.image}`} title={reference.title} alt={reference.title} />
                 </figure>
                 <div className={style['product-description']}>
                     <h3>{reference.title}</h3>

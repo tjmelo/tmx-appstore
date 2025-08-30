@@ -14,7 +14,7 @@ const root = createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname}>
         <Suspense fallback={<Loading />}>
           <SideMenu />
           <TMX />
