@@ -1,7 +1,6 @@
 ![project](https://img.shields.io/badge/project-TMX%20AppStore-blue)
 
 ![Size](https://img.shields.io/github/repo-size/tjmelo/tmx-appstore) ![Version](https://img.shields.io/github/package-json/v/tjmelo/tmx-appstore) ![Release](https://img.shields.io/github/v/release/tjmelo/tmx-appstore) ![Last Commit](https://img.shields.io/github/last-commit/tjmelo/tmx-appstore/main)
-![Passing](https://img.shields.io/github/actions/workflow/status/tjmelo/tmx-appstore/checkout-ci.yml)
 
 ## Table of content
 
@@ -41,9 +40,7 @@ Online project: [https://tjmelo.github.io/tmx-appstore/](https://tjmelo.github.i
 
 Some principal project dependencies
 
-![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/bootstrap?color=blue)
 ![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/sass?color=blue)
-![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/scrollreveal?color=blue)
 ![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/axios?color=blue)
 ![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/react?color=blue)
 ![Lib](https://img.shields.io/github/package-json/dependency-version/tjmelo/tmx-appstore/react-router-dom?color=blue)
