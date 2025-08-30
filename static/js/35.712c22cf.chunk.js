@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[35],{2035:(s,e,a)=>{a.r(e),a.d(e,{default:()=>l});a(5043);var i=a(3910),t=a(2916),n=a(5475);const d="login_login__HjNXd";var c=a(579);const l=()=>(0,c.jsxs)("div",{className:d,children:[(0,c.jsx)(i.g,{icon:t.X46}),(0,c.jsx)(n.N_,{"data-testid":"login",to:"/login",children:"Login"}),(0,c.jsx)("span",{children:"|"}),(0,c.jsx)(n.N_,{"data-testid":"register",to:"/cadastre",children:"Register"})]})}}]);
+//# sourceMappingURL=35.712c22cf.chunk.js.map

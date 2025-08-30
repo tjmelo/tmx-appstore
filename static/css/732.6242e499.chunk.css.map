@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/732.6242e499.chunk.css","mappings":"AAAA,sBACI,mBACA,aACA,cACA,yBAGJ,uBACI","sources":["Components/header/header.module.scss"],"sourcesContent":[".header {\n    align-items: center;\n    display: flex;\n    flex-flow: row;\n    justify-content: flex-end;\n}\n\n.loading {\n    text-align: center;\n}\n"],"names":[],"sourceRoot":""}

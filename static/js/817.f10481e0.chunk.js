@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[817],{7817:(a,e,s)=>{s.r(e),s.d(e,{default:()=>c});s(5043);const t="image_view__qFcGI",i="image_loading__sNxDG";var l=s(579);const c=a=>{let{image:e,title:s}=a;return(0,l.jsx)("div",{"data-testid":"test-image",className:t,children:e?(0,l.jsx)("img",{src:e,alt:s,title:s}):(0,l.jsx)("img",{className:i,alt:"",src:"/loading.gif"})})}}}]);
+//# sourceMappingURL=817.f10481e0.chunk.js.map
