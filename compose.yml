@@ -1,0 +1,9 @@
+services:
+    tmx-mercury:
+        container_name: ${PROJECT_NAME:-tmx-appstore}-c
+        build: .
+        image: tmwd/${PROJECT_NAME:-tmx-appstore}:${PROJECT_VERSION:-latest}
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/${PROJECT_NAME:-tmx-appstore}
