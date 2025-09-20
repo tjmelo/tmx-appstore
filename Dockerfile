@@ -11,7 +11,7 @@ WORKDIR /${TMX_PATH}
 
 COPY package*.json .
 
-RUN npm i
+RUN npm install
 
 COPY . .
 
